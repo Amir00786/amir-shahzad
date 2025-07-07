@@ -22,7 +22,7 @@ export const Header = () => {
                 </strong>
                 <div
                     onClick={() => setIsOpen(!isOpen)}
-                    className="h-5 w-8 flex flex-col gap-y-1 items-center md:hidden"
+                    className="h-5 w-8 flex flex-col gap-y-1 items-center md:hidden cursor-pointer"
                 >
                     <div className="w-full h-1 bg-orange-500"></div>
                     <div className="w-full h-1 bg-white"></div>
@@ -53,7 +53,7 @@ export const Header = () => {
                         }`}
                     onClick={(e) => e.stopPropagation()}
                 >
-                    <div className="relative" onClick={() => setIsOpen(false)}>
+                    <div className="relative cursor-pointer" onClick={() => setIsOpen(false)}>
                         <span className="absolute right-8 w-1 h-6 bg-orange-500 top-7 rotate-[-45deg]"></span>
                         <span className="absolute right-8 w-1 h-6 bg-orange-500 top-7 rotate-45"></span>
                     </div>

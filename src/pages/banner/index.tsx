@@ -9,6 +9,16 @@ export const Banner = () => {
     const [index, setIndex] = useState(0);
     const [displayText, setDisplayText] = useState("");
 
+    const handleDownload = () => {
+        const fileUrl = '/Amir_Shahzad_CV.pdf';
+        const link = document.createElement('a');
+        link.href = fileUrl;
+        link.download = 'Amir_Shahzad_CV.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     useEffect(() => {
         let currentText = roles[index];
         let chars = currentText.split("");
@@ -66,6 +76,7 @@ export const Banner = () => {
                         that deliver exceptional user experiences.
                     </p>
                     <Button
+                        onClick={handleDownload}
                         variant="outline"
                         className="bg-orange-500 px-6 py-3 h-auto cursor-pointer text-white transition-all duration-300 ease-in-out border border-orange-500 text-xl hover:border-orange-500/80 hover:bg-orange-500/80 hover:text-white"
                     >

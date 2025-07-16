@@ -56,9 +56,9 @@ export const Banner = () => {
     }, [index]);
 
     return (
-        <div className="py-10 sm:py-20 md:py-60">
-            <div className="md:flex items-center -mx-4 justify-between">
-                <div className="md:w-1/2 w-full px-4">
+        <div className="py-10 sm:pt-40 lg:pt-60">
+            <div className="flex flex-col-reverse md:flex-row items-center justify-between -mx-4">
+                <div className="w-full lg:w-1/2 px-4 mt-10 lg:mt-0">
                     <h1 className="text-3xl lg:text-5xl flex flex-col gap-y-3 lg:gap-y-5 font-bold mb-3 lg:mb-5">
                         <span className="block">Hello,</span>
                         <span className="block">
@@ -69,11 +69,10 @@ export const Banner = () => {
                         </span>
                     </h1>
                     <p className="text-sm sm:text-base lg:text-lg mb-8">
-                        I am a passionate and dedicated frontend developer with over <strong>4<sup className="text-orange-500">+</sup></strong> {" "}
-                        years of experience, specializing in crafting user-friendly and high-performance web applications.
-                        With a strong foundation in HTML, CSS, JavaScript, Reactjs, Nextjs, Tailwindcss, and Boortstrap,
-                        I focus on building seamless, responsive interfaces
-                        that deliver exceptional user experiences.
+                        I am a passionate and dedicated frontend developer with over{" "}
+                        <strong>4<sup className="text-orange-500">+</sup></strong> years of experience, specializing in crafting user-friendly and high-performance web applications.
+                        With a strong foundation in HTML, CSS, JavaScript, Reactjs, Nextjs, Tailwindcss, and Bootstrap,
+                        I focus on building seamless, responsive interfaces that deliver exceptional user experiences.
                     </p>
                     <Button
                         onClick={handleDownload}
@@ -83,14 +82,19 @@ export const Banner = () => {
                         Download CV
                     </Button>
                 </div>
-                <div className="md:w-1/2 w-full flex items-center justify-end px-4 pt-48 md:pt-0">
-                    <div className="relative w-full md:w-[450px] h-60 sm:h-80 lg:w-[590px] lg:h-96 rounded-4xl bg-orange-400/10">
-                        <div className="absolute -top-1/2 left-1/2 -translate-x-1/2 rounded-full w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] xl:w-[450px] xl:h-[450px] bg-orange-500">
-                            <img src={profile} alt="profile" className="w-full shrink-0 bg-bottom rounded-full h-full object-cover" />
+                <div className="w-full lg:w-1/2 flex items-end justify-end px-4 pt-20 lg:pt-0">
+                    <div className="relative w-full md:w-[450px] h-60 sm:h-80 lg:w-[590px] lg:h-96 rounded-4xl bg-orange-400/10 overflow-visible">
+                        <div className="absolute -top-1/2 left-1/2 -translate-x-1/2 rounded-full w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] xl:w-[450px] xl:h-[450px] bg-orange-500 overflow-hidden shadow-lg">
+                            <img
+                                src={profile}
+                                alt="profile"
+                                className="w-full h-full object-cover rounded-full"
+                            />
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     );
 };

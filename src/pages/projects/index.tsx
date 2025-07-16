@@ -2,8 +2,8 @@ import React from 'react'
 
 export const Projects = () => {
     return (
-        <div className='md:py-20 sm:py-12 py-8'>
-            <div className='flex md:mb-16 sm:mb-12 mb-8 flex-col gap-2 md:gap-4 items-center justify-center'>
+        <div className='md:py-16 sm:py-12 py-8'>
+            <div className='flex md:mb-16 sm:mb-12 mb-8 flex-col gap-2 md:gap-4'>
                 <span className='text-white uppercase font-medium md:text-xl text-sm sm:text-base md:tracking-wider'>
                     My Recent
                 </span>

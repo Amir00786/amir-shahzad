@@ -1,4 +1,48 @@
-import web from "../../assets/html.png";
+import html5 from "../../assets/html.png";
+import css3 from "../../assets/css3.png";
+import js from "../../assets/js.png";
+import react from "../../assets/react.png";
+import tailwind from "../../assets/tailwind.png";
+import figma from "../../assets/figma.png";
+
+const techCards = [
+    {
+        icon: html5,
+        title: 'HTML',
+        description:
+            'HTML5 is the latest standard for structuring web content. It introduces semantic elements, multimedia support, and enhanced forms. HTML5 improves performance, accessibility, and compatibility across devices without relying on outdated plugins like Flash, ensuring a better user experience.',
+    },
+    {
+        icon: css3,
+        title: 'CSS',
+        description:
+            'CSS3 brings powerful styling capabilities to the web. With features like animations, transitions, flexbox, and grid, it helps developers create responsive, modern designs. CSS3 allows for consistent visuals across devices while reducing the need for additional layout frameworks or libraries.',
+    },
+    {
+        icon: js,
+        title: 'JavaScript',
+        description:
+            'JavaScript is a scripting language for building interactive web experiences. It powers features like form validation, animations, and real-time updates. JavaScript runs in the browser and is essential for building responsive, dynamic websites and full-featured applications using various frameworks.',
+    },
+    {
+        icon: react,
+        title: 'React',
+        description:
+            'React is a JavaScript library used to build user interfaces. It features a component-based structure and uses a virtual DOM for efficient updates. React is ideal for creating fast, scalable front-end applications, including web and mobile platforms like React Native.',
+    },
+    {
+        icon: tailwind,
+        title: 'Tailwind CSS',
+        description:
+            'Tailwind CSS is a utility-first framework for rapidly building modern, responsive designs. It provides low-level utility classes directly in HTML. This allows developers to create clean layouts quickly without writing custom CSS, promoting consistency and maintainability across entire projects.',
+    },
+    {
+        icon: figma,
+        title: 'Figma',
+        description:
+            'Figma is a collaborative UI design tool used by teams to create wireframes, prototypes, and design systems. It supports real-time editing, feedback, and versioning in the browser. Figma simplifies collaboration between designers and developers, especially for remote or agile teams.',
+    },
+];
 
 export const Services = () => {
     return (
@@ -14,86 +58,23 @@ export const Services = () => {
                 </p>
             </div>
             <div className='flex gap-y-6 flex-wrap -mx-3'>
-                <div className='md:w-1/3 sm:w-1/2 w-full px-3'>
-                    <div className="flex items-center gap-x-5">
-                        <div className="mb-8 flex items-center gap-x-8">
-                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                <div className="w-8 h-8 shrink-0">
-                                    <img src={web} alt="web" className="w-full h-full object-cover" />
-                                </div>
-                            </div>
-                            <strong className="text-white text-2xl font-semibold">Html 5</strong>
-                        </div>
-                    </div>
-                    <p>HTML5 is the modern standard for building websites. It offers semantic tags, audio and video support, and improved forms. With HTML5, your site is faster, more accessible, and works on all devices. It helps create engaging, interactive experiences without relying on outdated plugins or technologies.</p>
-                </div>
-                <div className='md:w-1/3 sm:w-1/2 w-full px-3'>
-                    <div className="flex items-center gap-x-5">
-                        <div className="mb-8 flex items-center gap-x-8">
-                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                <div className="w-8 h-8 shrink-0">
-                                    <img src={web} alt="web" className="w-full h-full object-cover" />
-                                </div>
-                            </div>
-                            <strong className="text-white text-2xl font-semibold">Html 5</strong>
-                        </div>
-                    </div>
-                    <p>HTML5 is the modern standard for building websites. It offers semantic tags, audio and video support, and improved forms. With HTML5, your site is faster, more accessible, and works on all devices. It helps create engaging, interactive experiences without relying on outdated plugins or technologies.</p>
-                </div>
-                <div className='md:w-1/3 sm:w-1/2 w-full px-3'>
-                    <div className="flex items-center gap-x-5">
-                        <div className="mb-8 flex items-center gap-x-8">
-                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                <div className="w-8 h-8 shrink-0">
-                                    <img src={web} alt="web" className="w-full h-full object-cover" />
-                                </div>
-                            </div>
-                            <strong className="text-white text-2xl font-semibold">Html 5</strong>
-                        </div>
-                    </div>
-                    <p>HTML5 is the modern standard for building websites. It offers semantic tags, audio and video support, and improved forms. With HTML5, your site is faster, more accessible, and works on all devices. It helps create engaging, interactive experiences without relying on outdated plugins or technologies.</p>
-                </div>
-                <div className='md:w-1/3 sm:w-1/2 w-full px-3'>
-                    <div className="flex items-center gap-x-5">
-                        <div className="mb-8 flex items-center gap-x-8">
-                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                <div className="w-8 h-8 shrink-0">
-                                    <img src={web} alt="web" className="w-full h-full object-cover" />
-                                </div>
-                            </div>
-                            <strong className="text-white text-2xl font-semibold">Html 5</strong>
-                        </div>
-                    </div>
-                    <p>HTML5 is the modern standard for building websites. It offers semantic tags, audio and video support, and improved forms. With HTML5, your site is faster, more accessible, and works on all devices. It helps create engaging, interactive experiences without relying on outdated plugins or technologies.</p>
-                </div>
-                <div className='md:w-1/3 sm:w-1/2 w-full px-3'>
-                    <div className="p-6 bg-orange-500">
-                        <div className="flex items-center gap-x-5">
-                            <div className="mb-8 flex items-center gap-x-8">
-                                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                    <div className="w-8 h-8 shrink-0">
-                                        <img src={web} alt="web" className="w-full h-full object-cover" />
+                {techCards.map((card, index) => (
+                    <div key={index} className='md:w-1/3 sm:w-1/2 w-full px-3'>
+                        <div className="p-6 bg-orange-500/70 rounded-2xl h-full hover:bg-orange-600 transition-all duration-300 hover:text-black tracking-wide text-white">
+                            <div className="flex items-center gap-x-5">
+                                <div className="mb-8 flex items-center gap-x-8">
+                                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                                        <div className="w-8 h-8 shrink-0">
+                                            <img src={card.icon} alt={card.title} className="w-full h-full object-cover" />
+                                        </div>
                                     </div>
-                                </div>
-                                <strong className="text-white text-2xl font-semibold">Html 5</strong>
-                            </div>
-                        </div>
-                        <p>HTML5 is the modern standard for building websites. It offers semantic tags, audio and video support, and improved forms. With HTML5, your site is faster, more accessible, and works on all devices. It helps create engaging, interactive experiences without relying on outdated plugins or technologies.</p>
-                    </div>
-                </div>
-                <div className='md:w-1/3 sm:w-1/2 w-full px-3'>
-                    <div className="flex items-center gap-x-5">
-                        <div className="mb-8 flex items-center gap-x-8">
-                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                <div className="w-8 h-8 shrink-0">
-                                    <img src={web} alt="web" className="w-full h-full object-cover" />
+                                    <strong className="text-2xl font-semibold">{card.title}</strong>
                                 </div>
                             </div>
-                            <strong className="text-white text-2xl font-semibold">Html 5</strong>
+                            <p>{card.description}</p>
                         </div>
                     </div>
-                    <p>HTML5 is the modern standard for building websites. It offers semantic tags, audio and video support, and improved forms. With HTML5, your site is faster, more accessible, and works on all devices. It helps create engaging, interactive experiences without relying on outdated plugins or technologies.</p>
-                </div>
+                ))}
             </div>
         </>
     )

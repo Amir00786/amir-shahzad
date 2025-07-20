@@ -18,7 +18,7 @@ export const About = () => {
                 </div>
                 <div className="w-full md:w-[60%] px-3">
                     <h1 className="text-4xl md:text-5xl lg:text-7xl mb-5 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]">
-                        ABOUT ME
+                        WHO I AM
                     </h1>
                     <p className="text-sm sm:text-base lg:text-lg mb-8">
                         With over four years of dedicated experience in frontend development, I specialize in building engaging and high-performance web applications. Skilled in HTML, CSS, JavaScript, React.js, Next.js, Tailwind CSS, and Bootstrap, I am passionate about crafting seamless, mobile-friendly interfaces that deliver a polished and consistent user experience on any device. </p>

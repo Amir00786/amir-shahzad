@@ -48,9 +48,9 @@ export const Services = () => {
     return (
         <>
             <div className='flex md:mb-16 sm:mb-12 mb-8 flex-col gap-2 md:gap-4'>
-                <strong className='sm:text-4xl text-3xl md:text-5xl font-semibold text-stroke text-orange-500'>
-                    Services
-                </strong>
+                <h1 className="text-4xl md:text-5xl lg:text-7xl mb-5 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]">
+                    What i offer
+                </h1>
             </div>
             <div className='flex gap-y-6 flex-wrap -mx-3 mb-8'>
                 <p className='text-white text-sm sm:text-base lg:text-lg'>

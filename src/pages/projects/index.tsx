@@ -4,12 +4,9 @@ export const Projects = () => {
     return (
         <div className='md:py-16 sm:py-12 py-8'>
             <div className='flex md:mb-16 sm:mb-12 mb-8 flex-col gap-2 md:gap-4'>
-                <span className='text-white uppercase font-medium md:text-xl text-sm sm:text-base md:tracking-wider'>
-                    My Recent
-                </span>
-                <strong className='sm:text-4xl text-3xl md:text-5xl font-semibold text-stroke text-orange-500'>
-                    Projects
-                </strong>
+                <h1 className="text-4xl md:text-5xl lg:text-7xl mb-5 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]">
+                    My Work
+                </h1>
             </div>
             <div className='flex gap-y-6 flex-wrap -mx-3'>
                 <div className='md:w-1/3 sm:w-1/2 w-full px-3'>

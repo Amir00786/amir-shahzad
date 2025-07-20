@@ -4,6 +4,7 @@ import { Banner } from './pages/banner'
 import { Header } from './pages/header'
 import { Projects } from './pages/projects'
 import { Services } from './pages/services'
+import { Skills } from './pages/skills'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <About />
         <Projects />
         <Services />
+        <Skills />
       </div>
     </>
   )

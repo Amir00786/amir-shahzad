@@ -47,35 +47,35 @@ const techCards = [
 export const Services = () => {
     return (
         <>
-            <div className='flex md:mb-16 sm:mb-12 mb-8 flex-col gap-2 md:gap-4'>
-                <h1 className="text-4xl md:text-5xl lg:text-7xl mb-5 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]">
+            <div className="lg:py-20 md:py-12 py-8">
+                <h1 className="text-2xl md:text-5xl mb-8 md:mb-10 lg:mb-16 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]">
                     What i offer
                 </h1>
-            </div>
-            <div className='flex gap-y-6 flex-wrap -mx-3 mb-8'>
-                <p className='text-white text-sm sm:text-base lg:text-lg'>
-                    We specialize in creating modern, responsive websites that are both visually appealing and user-friendly. Our designs are tailored to reflect your brand’s identity while ensuring optimal functionality across all devices. Whether you're launching a new business or revamping an existing site, our web design services can give you the competitive edge you need. From layout planning and UX/UI optimization to mobile responsiveness and SEO integration, we handle it all. We use the latest tools such as Figma and Adobe XD to bring your vision to life. Let us design a digital space that not only looks great but also drives results. Contact us today to get started!
-                </p>
-            </div>
-            <div className='flex gap-y-6 flex-wrap -mx-3'>
-                {techCards.map((card, index) => (
-                    <div key={index} className='md:w-1/3 sm:w-1/2 w-full px-3'>
-                        <div className="p-6 bg-orange-500/70 rounded-2xl h-full hover:bg-orange-600 transition-all duration-300 hover:text-black tracking-wide text-white">
-                            <div className="flex items-center gap-x-5">
-                                <div className="mb-8 flex items-center gap-x-8">
-                                    <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                        <div className="w-8 h-8 shrink-0">
-                                            <img src={card.icon} alt={card.title} className="w-full h-full object-cover" />
+                <div className='flex gap-y-6 flex-wrap -mx-3 mb-8 px-4'>
+                    <p className='text-white text-sm sm:text-base lg:text-lg'>
+                        We specialize in creating modern, responsive websites that are both visually appealing and user-friendly. Our designs are tailored to reflect your brand’s identity while ensuring optimal functionality across all devices. Whether you're launching a new business or revamping an existing site, our web design services can give you the competitive edge you need. From layout planning and UX/UI optimization to mobile responsiveness and SEO integration, we handle it all. We use the latest tools such as Figma and Adobe XD to bring your vision to life. Let us design a digital space that not only looks great but also drives results. Contact us today to get started!
+                    </p>
+                </div>
+                <div className='flex gap-y-6 flex-wrap -mx-3'>
+                    {techCards.map((card, index) => (
+                        <div key={index} className='md:w-1/3 sm:w-1/2 w-full px-3'>
+                            <div className="p-4 md:p-6 bg-orange-500/70 rounded-2xl h-full hover:bg-orange-600 text-sm sm:text-base transition-all duration-300 hover:text-black tracking-wide text-white">
+                                <div className="flex items-center gap-x-5">
+                                    <div className="md:mb-8 mb-5 flex items-center gap-x-4 md:gap-x-8">
+                                        <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                                            <div className="w-8 h-8 shrink-0">
+                                                <img src={card.icon} alt={card.title} className="w-full h-full object-cover" />
+                                            </div>
                                         </div>
+                                        <strong className="text-lg sm:text-xl md:text-2xl font-semibold">{card.title}</strong>
                                     </div>
-                                    <strong className="text-2xl font-semibold">{card.title}</strong>
                                 </div>
+                                <p>{card.description}</p>
                             </div>
-                            <p>{card.description}</p>
                         </div>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
+            </div >
         </>
     )
 }

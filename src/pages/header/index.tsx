@@ -5,10 +5,12 @@ export const Header = () => {
 
     const navLinks = [
         { name: "Home", href: "/" },
-        { name: "About", href: "/" },
-        { name: "Services", href: "/" },
-        { name: "Projects", href: "/" },
-        { name: "Contact", href: "/" },
+        { name: "Who I am", href: "/" },
+        { name: "My Work", href: "/" },
+        { name: "What I Offer", href: "/" },
+        { name: "Expertise", href: "/" },
+        { name: "What Client Say", href: "/" },
+        { name: "Contact Me", href: "/" },
     ];
 
     return (
@@ -22,19 +24,19 @@ export const Header = () => {
                 </strong>
                 <div
                     onClick={() => setIsOpen(!isOpen)}
-                    className="h-5 w-8 flex flex-col gap-y-1 items-center md:hidden cursor-pointer"
+                    className="h-5 w-8 flex flex-col gap-y-1 items-center xl:hidden cursor-pointer"
                 >
                     <div className="w-full h-1 bg-orange-500"></div>
                     <div className="w-full h-1 bg-white"></div>
                     <div className="w-full h-1 bg-orange-500"></div>
                 </div>
-                <nav className="hidden md:block">
-                    <ul className="flex items-center gap-x-6">
+                <nav className="hidden xl:block">
+                    <ul className="flex items-center gap-x-4">
                         {navLinks.map((link) => (
                             <li key={link.name}>
                                 <a
                                     href={link.href}
-                                    className="text-base lg:text-lg py-1 px-3 lg:px-5 hover:bg-orange-500 hover:rounded-full transition-all duration-300"
+                                    className="text-base py-1 px-3 lg:px-5 hover:bg-orange-500 hover:rounded-full transition-all duration-300"
                                 >
                                     {link.name}
                                 </a>
@@ -44,7 +46,7 @@ export const Header = () => {
                 </nav>
             </div>
             <div
-                className={`fixed inset-0 z-30 md:hidden transition-opacity duration-300 ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+                className={`fixed inset-0 z-30 xl:hidden transition-opacity duration-300 ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
                     }`}
                 onClick={() => setIsOpen(false)}
             >

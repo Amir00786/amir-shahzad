@@ -141,3 +141,45 @@ body {
   text-transform: uppercase;
   color: #f97316;
 }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.author-name {
+  background: linear-gradient(to right,
+      #f7f6f5 20%,
+      /* dark orange */
+      #5a2600 40%,
+      /* orange */
+      #000000 60%,
+      /* black */
+      #77073f 80%
+      /* orange */
+    );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}

@@ -2,7 +2,7 @@ import { Mail, MapPin, Phone } from "lucide-react"
 
 export const Contact = () => {
     return (
-        <div className="py-24">
+        <div className="md:py-12 sm:py-8 py-4">
             <h1 className="text-2xl md:text-5xl mb-8 md:mb-10 lg:mb-16 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]">
                 Get In Touch
             </h1>
@@ -65,7 +65,7 @@ export const Contact = () => {
                             <label htmlFor="message" className="text-sm font-medium">Message</label>
                             <textarea placeholder="Enter your message" id="message" className="border w-full resize-none px-8 h-32 bg-transparent border-orange-500 rounded-md p-2 focus:outline-none" />
                             <div className="w-full flex items-end justify-end mt-5">
-                                <button type="submit" className="bg-orange-500 text-white cursor-pointer w-24 h-12 rounded-full">Send</button>
+                                <button type="submit" className="bg-orange-500 text-white cursor-pointer sm:w-24 w-full h-12 rounded-full">Send</button>
                             </div>
                         </div>
                     </form>

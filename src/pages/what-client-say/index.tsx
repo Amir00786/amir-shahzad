@@ -36,7 +36,7 @@ export const WhatClientSay = () => {
 
 
     return (
-        <div className="lg:pt-20 md:pt-12 pt-8 md:pb-40 pb-20">
+        <div className="lg:pt-20 md:pt-12 sm:pt-8 pt-4 md:pb-40 pb-20">
             <h1 className="text-2xl md:text-5xl mb-8 md:mb-10 lg:mb-16 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]">
                 What Client Say
             </h1>
@@ -55,7 +55,7 @@ export const WhatClientSay = () => {
                                 <span className="absolute -bottom-6 right-4 text-7xl leading-none text-white">”</span>
                                 <footer className="absolute bottom-7 min-h-10 right-5 text-right text-sm not-italic author-name">{item.author}</footer>
                             </blockquote>
-                            <div className="absolute w-24 p-2 h-24 left-1/2 -translate-x-1/2 -bottom-32 rounded-full border border-orange-500 bg-white">
+                            <div className="absolute w-24 p-2 h-24 left-1/2 -translate-x-1/2 -bottom-32 rounded-full border border-orange-500">
                                 <img src={item.image} alt="testimonial" className="w-full h-full object-cover rounded-full" />
                             </div>
                         </div>
@@ -79,7 +79,7 @@ export const WhatClientSay = () => {
                                         <span className="absolute -bottom-6 right-4 text-7xl leading-none text-white">”</span>
                                         <footer className="absolute bottom-7 min-h-10 right-5 text-right text-sm not-italic">{item.author}</footer>
                                     </blockquote>
-                                    <div className="absolute w-24 p-2 h-24 left-1/2 -translate-x-1/2 -bottom-32 rounded-full border border-orange-500 bg-white">
+                                    <div className="absolute w-24 p-2 h-24 left-1/2 -translate-x-1/2 -bottom-32 rounded-full border border-orange-500">
                                         <img src={item.image} alt="testimonial" className="w-full h-full object-cover rounded-full" />
                                     </div>
                                 </div>

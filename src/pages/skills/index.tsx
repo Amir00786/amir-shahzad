@@ -10,18 +10,18 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 export const Skills = () => {
     return (
         <div className='md:py-12 sm:py-8 py-4'>
-            <h1 className="text-2xl md:text-5xl mb-8 md:mb-10 lg:mb-16 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]">
+            <h1 className="text-2xl md:text-5xl mb-8 md:mb-10 lg:mb-16 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]" data-aos="fade-up" data-aos-duration="2000">
                 Expertise
             </h1>
             <Carousel
-                className="w-full relative">
+                className="w-full relative" data-aos="fade-up" data-aos-duration="2000">
                 <CarouselContent>
                     {[
                         { src: html5, alt: "html5" },
                         { src: css3, alt: "css3" },
                         { src: js, alt: "js" },
-                        { src: react, alt: "react" },
                         { src: tailwind, alt: "tailwind" },
+                        { src: react, alt: "react" },
                         { src: figma, alt: "figma" },
                         { src: uiux, alt: "uiux" },
                     ].map((item, index) => (

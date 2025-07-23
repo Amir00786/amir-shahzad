@@ -1,21 +1,23 @@
 import { useState } from "react";
+import "aos/dist/aos.css";
 
 export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const navLinks = [
-        { name: "Home", href: "/" },
-        { name: "Who I am", href: "/" },
-        { name: "My Work", href: "/" },
-        { name: "What I Offer", href: "/" },
-        { name: "Expertise", href: "/" },
-        { name: "What Client Say", href: "/" },
-        { name: "Contact Me", href: "/" },
+        { name: "Home", href: "#home" },
+        { name: "Who I am", href: "#about" },
+        { name: "My Work", href: "#projects" },
+        { name: "What I Offer", href: "#services" },
+        { name: "Expertise", href: "#skills" },
+        { name: "What Client Say", href: "#testimonials" },
+        { name: "Contact Me", href: "#contact" },
     ];
 
+
     return (
-        <header className="py-6">
-            <div className="flex justify-between items-center">
+        <header className="py-6 border-b border-white/20 fixed top-0 left-0 right-0 z-50 bg-stone-900" data-aos="fade-down" data-aos-duration="2000">
+            <div className="flex justify-between items-center mx-auto px-4 max-w-[1440px]">
                 <strong>
                     <a href="/" className="text-2xl lg:text-4xl flex items-center gap-2 font-bold text-white">
                         Amir

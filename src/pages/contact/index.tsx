@@ -7,7 +7,7 @@ export const Contact = () => {
                 Get In Touch
             </h1>
             <div className="flex flex-col md:flex-row gap-x-4">
-                <div className='2xl:w-1/3 md:w-1/2 w-full'>
+                <div className='2xl:w-1/3 md:w-1/2 w-full' data-aos="zoom-in-right" data-aos-duration="2000">
                     <div className="border-b md:border-b-0 mb-5 gap-y-5 md:gap-0 md:border-r border-orange-500 h-full flex flex-col justify-between pb-8 md:pr-8">
                         <div className='bg-white rounded-2xl p-4 lg:p-6'>
                             <div className='flex items-center gap-2 sm:gap-4'>
@@ -41,7 +41,7 @@ export const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grow basis-0 min-w-0 mx-auto">
+                <div className="grow basis-0 min-w-0 mx-auto" data-aos="zoom-in-left" data-aos-duration="2000">
                     <form className="border border-orange-500 rounded-md p-4 2xl:max-w-3xl mx-auto">
                         <div className="flex flex-wrap -mx-4 gap-y-4">
                             <div className="flex flex-col gap-y-2 w-full lg:w-1/2 px-4">

@@ -56,9 +56,9 @@ export const Banner = () => {
     }, [index]);
 
     return (
-        <div className="py-10 sm:pt-40 lg:pt-60">
+        <div className="py-10 sm:pt-40 lg:pt-80">
             <div className="flex flex-col-reverse md:flex-row items-center justify-between -mx-4">
-                <div className="w-full lg:w-1/2 px-4 mt-10 lg:mt-0">
+                <div className="w-full lg:w-1/2 px-4 mt-10 lg:mt-0" data-aos="fade-right" data-aos-duration="1000">
                     <h1 className="text-3xl lg:text-5xl flex flex-col gap-y-3 lg:gap-y-5 font-bold mb-3 lg:mb-5">
                         <span className="block">Hello,</span>
                         <span className="block">
@@ -82,7 +82,7 @@ export const Banner = () => {
                         Download CV
                     </Button>
                 </div>
-                <div className="w-full lg:w-1/2 flex items-end justify-end px-4 pt-20 lg:pt-0">
+                <div className="w-full lg:w-1/2 flex items-end justify-end px-4 pt-20 lg:pt-0" data-aos="flip-up" data-aos-duration="2000">
                     <div className="relative w-full md:w-[450px] h-60 sm:h-80 lg:w-[590px] lg:h-96 rounded-4xl bg-orange-400/10 overflow-visible">
                         <div className="absolute -top-1/2 left-1/2 -translate-x-1/2 rounded-full w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] xl:w-[450px] xl:h-[450px] bg-orange-500 overflow-hidden shadow-lg">
                             <img

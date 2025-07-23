@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Projects = () => {
     return (
-        <div className='lg:py-20 md:py-12 py-8'>
+        <div className='md:py-12 sm:py-8 py-4'>
             <h1 className="text-4xl md:text-5xl mb-16 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]">
                 My Work
             </h1>

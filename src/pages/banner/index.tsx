@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Button } from "../../components/ui/button";
 import profile from "../../assets/profile.png";
 
-
 const roles = ["Frontend Developer", "Freelancer"];
 
 export const Banner = () => {
@@ -10,13 +9,13 @@ export const Banner = () => {
     const [displayText, setDisplayText] = useState("");
 
     const handleDownload = () => {
-        const fileUrl = '/Amir_Shahzad_CV.pdf';
+        const fileUrl = '/amirshahzad.pdf';
         const link = document.createElement('a');
         link.href = fileUrl;
-        link.download = 'Amir_Shahzad_CV.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+            link.download = 'amirshahzad.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
     };
 
     useEffect(() => {
@@ -25,7 +24,6 @@ export const Banner = () => {
         let tempText = "";
         let i = chars.length - 1;
 
-        // Typing animation (right to left)
         const typeInterval = setInterval(() => {
             tempText = chars[i] + tempText;
             setDisplayText(tempText);
@@ -34,7 +32,6 @@ export const Banner = () => {
             if (i < 0) {
                 clearInterval(typeInterval);
 
-                // Wait before deleting
                 setTimeout(() => {
                     let j = chars.length - 1;
 
@@ -47,10 +44,10 @@ export const Banner = () => {
                             clearInterval(deleteInterval);
                             setIndex((prev) => (prev + 1) % roles.length);
                         }
-                    }, 100); // Character deletion speed
-                }, 2000); // Hold full text before deleting
+                    }, 100);
+                }, 2000);
             }
-        }, 100); // Character typing speed
+        }, 100);
 
         return () => clearInterval(typeInterval);
     }, [index]);
@@ -82,6 +79,7 @@ export const Banner = () => {
                         Download CV
                     </Button>
                 </div>
+
                 <div className="w-full lg:w-1/2 flex items-end justify-end px-4 pt-20 lg:pt-0" data-aos="flip-up" data-aos-duration="2000">
                     <div className="relative w-full md:w-[450px] h-60 sm:h-80 lg:w-[590px] lg:h-96 rounded-4xl bg-orange-400/10 overflow-visible">
                         <div className="absolute -top-1/2 left-1/2 -translate-x-1/2 rounded-full w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] xl:w-[450px] xl:h-[450px] bg-orange-500 overflow-hidden shadow-lg">
@@ -94,7 +92,6 @@ export const Banner = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };

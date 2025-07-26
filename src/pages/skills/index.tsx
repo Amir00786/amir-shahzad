@@ -4,7 +4,6 @@ import js from "../../assets/js.png"
 import react from "../../assets/reactjs.png"
 import tailwind from "../../assets/tailwindcss.png"
 import figma from "../../assets/figma.png"
-import uiux from "../../assets/ui.png"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../../components/ui/carousel"
 
 export const Skills = () => {

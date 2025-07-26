@@ -23,7 +23,6 @@ export const Skills = () => {
                         { src: tailwind, alt: "tailwind" },
                         { src: react, alt: "react" },
                         { src: figma, alt: "figma" },
-                        { src: uiux, alt: "uiux" },
                     ].map((item, index) => (
                         <CarouselItem
                             key={index}

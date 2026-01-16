@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Button } from "../../components/ui/button";
 import profile from "../../assets/profile.png";
 
-const roles = ["Frontend Developer", "Freelancer"];
+const roles = ["Frontend Developer", "UI/UX Designer", "Freelancer"];
 
 export const Banner = () => {
     const [index, setIndex] = useState(0);
@@ -53,7 +53,7 @@ export const Banner = () => {
     }, [index]);
 
     return (
-        <div className="py-10 sm:pt-40 lg:pt-80">
+        <div className="py-10 pt-48 md:pt-80">
             <div className="flex flex-col-reverse md:flex-row items-center justify-between -mx-4">
                 <div className="w-full lg:w-1/2 px-4 mt-10 lg:mt-0" data-aos="fade-right" data-aos-duration="1000">
                     <h1 className="text-3xl lg:text-5xl flex flex-col gap-y-3 lg:gap-y-5 font-bold mb-3 lg:mb-5">

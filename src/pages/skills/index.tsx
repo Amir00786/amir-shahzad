@@ -1,9 +1,13 @@
 import html5 from "../../assets/html.png"
 import css3 from "../../assets/css3.png"
 import js from "../../assets/js.png"
-import react from "../../assets/reactjs.png"
-import tailwind from "../../assets/tailwindcss.png"
+import react from "../../assets/react-logo.svg"
+import tailwind from "../../assets/tailwind.png"
 import figma from "../../assets/figma.png"
+import figma2html from "../../assets/figma2html.png"
+import api from "../../assets/api.png"
+import figma2react from "../../assets/figma2react.png"
+
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../../components/ui/carousel"
 
 export const Skills = () => {
@@ -19,8 +23,11 @@ export const Skills = () => {
                         { src: html5, alt: "html5" },
                         { src: css3, alt: "css3" },
                         { src: js, alt: "js" },
+                        { src: figma2html, alt: "figma2html" },
+                        { src: figma2react, alt: "figma2react" },
                         { src: tailwind, alt: "tailwind" },
                         { src: react, alt: "react" },
+                        { src: api, alt: "api" },
                         { src: figma, alt: "figma" },
                     ].map((item, index) => (
                         <CarouselItem

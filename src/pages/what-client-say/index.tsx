@@ -35,7 +35,7 @@ export const WhatClientSay = () => {
                             <span className="absolute top-3 left-4 text-7xl leading-none text-white">“</span>
                             <p className="text-sm italic mb-10">Amir is one of the few frontend developers I’ve worked with who truly gets both design and performance. He translated complex UI mockups into pixel-perfect, fully responsive components. His ability to spot usability issues before they go live saved us a ton of time and revisions. Highly professional, deadline-oriented, and a great communicator throughout the project.</p>
                             <span className="absolute -bottom-6 right-4 text-7xl leading-none text-white">”</span>
-                            <footer className="absolute bottom-7 min-h-10 right-5 text-right text-sm not-italic">— Alex M., Design Lead</footer>
+                            <footer className="absolute bottom-7 min-h-10 right-5 text-right text-sm not-italic author-name">— Alex M., Design Lead</footer>
                         </blockquote>
                         <div className="absolute w-24 p-2 h-24 left-1/2 -translate-x-1/2 -bottom-32 rounded-full border border-orange-500">
                             <img src={testimonial2} alt="testimonial" className="w-full h-full object-cover rounded-full" />
@@ -50,7 +50,7 @@ export const WhatClientSay = () => {
                             <span className="absolute top-3 left-4 text-7xl leading-none text-white">“</span>
                             <p className="text-sm italic mb-10">We hired Amir for a critical website redesign and he exceeded our expectations. The site not only looks amazing on every screen size, but it's also blazing fast. He implemented animations, accessibility best practices, and even improved our SEO with better structure. His dedication to quality and clean code really stood out to our team.</p>
                             <span className="absolute -bottom-6 right-4 text-7xl leading-none text-white">”</span>
-                            <footer className="absolute bottom-7 min-h-10 right-5 text-right text-sm not-italic">— Priya R., Project Coordinator</footer>
+                            <footer className="absolute bottom-7 min-h-10 right-5 text-right text-sm not-italic author-name">— Priya R., Project Coordinator</footer>
                         </blockquote>
                         <div className="absolute w-24 p-2 h-24 left-1/2 -translate-x-1/2 -bottom-32 rounded-full border border-orange-500">
                             <img src={testimonial3} alt="testimonial" className="w-full h-full object-cover rounded-full" />
@@ -65,7 +65,7 @@ export const WhatClientSay = () => {
                             <span className="absolute top-3 left-4 text-7xl leading-none text-white">“</span>
                             <p className="text-sm italic mb-10">Every project Amir has worked on for us has been a major success. From complex React dashboards to marketing sites built from Figma files, he handled everything with speed and accuracy. What impressed me most was his ownership—he treats your project like it’s his own. If you want results without micromanaging, he's the developer you need.</p>
                             <span className="absolute -bottom-6 right-4 text-7xl leading-none text-white">”</span>
-                            <footer className="absolute bottom-7 min-h-10 right-5 text-right text-sm not-italic">— Jason T., Creative Director</footer>
+                            <footer className="absolute bottom-7 min-h-10 right-5 text-right text-sm not-italic author-name">— Jason T., Creative Director</footer>
                         </blockquote>
                         <div className="absolute w-24 p-2 h-24 left-1/2 -translate-x-1/2 -bottom-32 rounded-full border border-orange-500">
                             <img src={testimonial4} alt="testimonial" className="w-full h-full object-cover rounded-full" />

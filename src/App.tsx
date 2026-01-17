@@ -6,7 +6,7 @@ import { Footer } from './pages/footer'
 import { Header } from './pages/header'
 import { Projects } from './pages/projects'
 import { Services } from './pages/services'
-import { Skills } from './pages/skills'
+// import { Skills } from './pages/skills'
 import { WhatClientSay } from './pages/what-client-say'
 import { useEffect } from 'react'
 import AOS from 'aos'
@@ -35,9 +35,9 @@ function App() {
         <section id="services">
           <Services />
         </section>
-        <section id="skills">
+        {/* <section id="skills">
           <Skills />
-        </section>
+        </section> */}
         <section id="testimonials">
           <WhatClientSay />
         </section>

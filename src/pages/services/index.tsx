@@ -1,7 +1,7 @@
 import html5 from "../../assets/html.png";
 import css3 from "../../assets/css3.png";
 import js from "../../assets/js.png";
-import react from "../../assets/react.png";
+import react from "../../assets/react-logo.svg";
 import tailwind from "../../assets/tailwind.png";
 import figma from "../../assets/figma.png";
 

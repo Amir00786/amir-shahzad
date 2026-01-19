@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import yelling1 from "../../assets/yelling-1.png"
 import { Button } from "../../components/ui/button"
 import { Eye } from "lucide-react"

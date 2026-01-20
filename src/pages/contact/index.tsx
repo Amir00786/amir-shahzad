@@ -15,7 +15,7 @@ export const Contact = () => {
                                     <Phone className="w-5 sm:w-6 h-5 sm:h-6" />
                                 </div>
                                 <div className="flex flex-col"> 
-                                    <strong className="text-sm sm:text-base lg:text-xl text-gray-500">+93 3076258337</strong>
+                                    <strong className="text-sm sm:text-base lg:text-xl text-gray-500">+92 3076258337</strong>
                                 </div>
                             </div>
                         </div>

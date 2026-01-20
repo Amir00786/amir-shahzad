@@ -6,8 +6,8 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 export const WhatClientSay = () => {
     return (
-        <div className="lg:pt-20 md:pt-12 sm:pt-8 pt-4 md:pb-40 pb-20">
-            <h1 className="text-2xl md:text-5xl mb-8 md:mb-10 lg:mb-16 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]">
+        <div className="md:py-20 sm:py-8 py-4" id="testimonials">
+            <h1 className="text-3xl sm:mt-3 mt-20 md:text-5xl lg:mb-16 mb-8 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px] ">
                 What Client Say
             </h1>
 

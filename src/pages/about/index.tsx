@@ -3,7 +3,7 @@
 
 export const About = () => {
     return (
-        <div className='md:py-12 sm:py-8 py-4' id="skills">
+        <div className='md:py-20 sm:py-8 py-4' id="skills">
             {/* <div className="md:flex -mx-5 gap-x-5">
                 <div className="w-full mb-32 md:w-[50%] lg:w-[40%] px-4" data-aos="flip-down" data-aos-duration="1000">
                     <div className="relative w-full h-40 md::h-52 lg:h-72 rounded-4xl bg-orange-400/10 overflow-visible">
@@ -24,7 +24,7 @@ export const About = () => {
                         With over four years of dedicated experience in frontend development, I specialize in building engaging and high-performance web applications. Skilled in HTML, CSS, JavaScript, React.js, Next.js, Tailwind CSS, and Bootstrap, I am passionate about crafting seamless, mobile-friendly interfaces that deliver a polished and consistent user experience on any device. </p>
                 </div>
             </div> */}
-            <h3 className="text-2xl md:text-5xl mb-8 md:mb-10 lg:mb-16 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]" data-aos="fade-up" data-aos-duration="1000">SKILLS</h3>
+            <h3 className="text-3xl sm:mt-3 mt-20 md:text-5xl lg:mb-16 mb-8 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px] " data-aos="fade-up" data-aos-duration="1000">SKILLS</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-up" data-aos-duration="1500">
                 <div className="flex flex-col gap-6">
                     <div className="flex flex-col gap-3">

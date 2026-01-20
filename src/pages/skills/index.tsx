@@ -12,8 +12,8 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 export const Skills = () => {
     return (
-        <div className='md:py-12 sm:py-8 py-4'>
-            <h1 className="text-2xl md:text-5xl mb-8 md:mb-10 lg:mb-16 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]" data-aos="fade-up" data-aos-duration="2000">
+        <div className='md:py-20 sm:py-8 py-4' id="skills">
+            <h1 className="text-2xl sm:mt-3 mt-20 md:text-5xl mb-8 md:mb-10 lg:mb-16 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]" data-aos="fade-up" data-aos-duration="2000">
                 Expertise
             </h1>
             <Carousel

@@ -7,11 +7,11 @@ import figma from "../../assets/figma.png";
 
 export const Services = () => {
     return (
-        <div className="md:py-12 sm:py-8 py-4">
+        <div className="md:py-20 sm:py-8 py-4" id="services">
+            <h1 className="text-3xl sm:mt-3 mt-20 md:text-5xl lg:mb-16 mb-8 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]">
+                What I Offer
+            </h1>
             <div data-aos="fade-up" data-aos-duration="2000">
-                <h1 className="text-2xl md:text-5xl mb-8 md:mb-10 lg:mb-16 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]">
-                    What i offer
-                </h1>
                 <div className='flex gap-y-6 flex-wrap -mx-3 mb-8 px-4'>
                     <p className='text-white text-sm sm:text-base lg:text-lg'>
                         We specialize in creating modern, responsive websites that are both visually appealing and user-friendly. Our designs are tailored to reflect your brand’s identity while ensuring optimal functionality across all devices. Whether you're launching a new business or revamping an existing site, our web design services can give you the competitive edge you need. From layout planning and UX/UI optimization to mobile responsiveness and SEO integration, we handle it all. We use the latest tools such as Figma and Adobe XD to bring your vision to life. Let us design a digital space that not only looks great but also drives results. Contact us today to get started!

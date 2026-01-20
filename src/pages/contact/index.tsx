@@ -2,8 +2,8 @@ import { Mail, MapPin, Phone } from "lucide-react"
 
 export const Contact = () => {
     return (
-        <div className="md:py-12 sm:py-8 py-4">
-            <h1 className="text-2xl md:text-5xl mb-8 md:mb-10 lg:mb-16 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]">
+        <div className="md:py-20 sm:py-8 py-4" id="contact">
+            <h1 className="text-3xl sm:mt-3 mt-20 md:text-5xl lg:mb-16 mb-8 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]">
                 Get In Touch
             </h1>
             <div className="flex flex-col md:flex-row gap-x-4">

@@ -1,6 +1,7 @@
 import yelling1 from "../../assets/yelling-1.png"
 import MPDark from "../../assets/MPDark.svg"
-import hero from "../../assets/hero.svg"
+import hero from "../../assets/hero.jpg"
+import blog5 from "../../assets/blog-5.jpg"
 import { Button } from "../../components/ui/button"
 import { Eye } from "lucide-react"
 
@@ -71,7 +72,7 @@ export const Projects = () => {
                             </div>
                             <div className='flex flex-col gap-2'>
                                 <h3 className='text-xl font-bold text-gray-800'>Ambakeo AI</h3>
-                                <p className='text-sm text-gray-600'>AI-powered cake ordering platform</p>
+                                <p className='text-sm text-gray-600'>Premium bakery and cake shop platform</p>
                             </div>
                             <Button
                                 onClick={() => window.open('https://ambakeoai.vercel.app/', '_blank')}
@@ -83,9 +84,25 @@ export const Projects = () => {
                     </div>
                 </div>
                 <div className='' data-aos="zoom-in" data-aos-duration="1000">
-                    <div className='bg-white rounded-2xl p-6'>
-                        <div className='flex items-center gap-2'>
-                            <div className='w-12 h-12 bg-orange-500 rounded-full'></div>
+                    <div className='bg-white rounded-2xl p-4 hover:shadow-xl'>
+                        <div className='flex flex-col gap-4'>
+                            <div className='w-full h-48 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center'>
+                                <img
+                                    src={blog5}
+                                    alt="Spa Salon"
+                                    className='w-full h-full object-cover transition-all duration-300 hover:scale-110'
+                                />
+                            </div>
+                            <div className='flex flex-col gap-2'>
+                                <h3 className='text-xl font-bold text-gray-800'>Velvet Spa Salon</h3>
+                                <p className='text-sm text-gray-600'>Professional hair styling and barber services</p>
+                            </div>
+                            <Button
+                                onClick={() => window.open('https://spa-salon-velvetcom.vercel.app/', '_blank')}
+                                className='w-full bg-orange-500 text-white hover:bg-orange-500/80 hover:text-white'>
+                                <Eye className='w-4 h-4' />
+                                Live Preview
+                            </Button>
                         </div>
                     </div>
                 </div>

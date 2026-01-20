@@ -1,8 +1,7 @@
 import { Mail, MapPin, Phone } from "lucide-react"
 import { useState } from "react"
 import { useToast } from "../../components/ui/use-toast"
-import emailjs from '@emailjs/browser'
-import { EMAILJS_CONFIG } from "../../config/emailjs"
+import { WEB3FORMS_CONFIG } from "../../config/emailjs"
 
 interface FormData {
     firstName: string
@@ -93,41 +92,49 @@ export const Contact = () => {
         setIsSubmitting(true)
 
         try {
-            // Send email using EmailJS
-            const templateParams = {
-                from_name: `${formData.firstName} ${formData.lastName}`,
-                from_email: formData.email,
-                phone: formData.phone,
-                message: formData.message,
-                to_email: 'amirshahzadvu91@gmail.com',
+            // Send email using Web3Forms
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    access_key: WEB3FORMS_CONFIG.ACCESS_KEY,
+                    name: `${formData.firstName} ${formData.lastName}`,
+                    email: formData.email,
+                    phone: formData.phone,
+                    message: formData.message,
+                    to: WEB3FORMS_CONFIG.RECIPIENT_EMAIL,
+                    subject: `New Contact Form Message from ${formData.firstName} ${formData.lastName}`,
+                    from_name: 'Portfolio Contact Form',
+                }),
+            })
+
+            const result = await response.json()
+
+            if (result.success) {
+                toast({
+                    variant: "success",
+                    title: "Success!",
+                    description: "Your message has been sent successfully. We'll get back to you soon.",
+                })
+
+                setFormData({
+                    firstName: '',
+                    lastName: '',
+                    email: '',
+                    phone: '',
+                    message: ''
+                })
+            } else {
+                throw new Error(result.message || 'Failed to send message')
             }
-
-            await emailjs.send(
-                EMAILJS_CONFIG.SERVICE_ID,
-                EMAILJS_CONFIG.TEMPLATE_ID,
-                templateParams,
-                EMAILJS_CONFIG.PUBLIC_KEY
-            )
-
-            toast({
-                variant: "success",
-                title: "Success!",
-                description: "Your message has been sent successfully. We'll get back to you soon.",
-            })
-
-            setFormData({
-                firstName: '',
-                lastName: '',
-                email: '',
-                phone: '',
-                message: ''
-            })
         } catch (error) {
-            console.error('EmailJS Error:', error)
+            console.error('Form Error:', error)
             toast({
                 variant: "destructive",
                 title: "Error",
-                description: "Failed to send message. Please try again or contact directly at amirshahzadvu91@gmail.com",
+                description: "Failed to send message. Please contact directly at amirshahzadvu91@gmail.com",
             })
         } finally {
             setIsSubmitting(false)

@@ -1,20 +1,13 @@
-// EmailJS Configuration
-// 1. Go to https://www.emailjs.com/
-// 2. Sign up with your email: amirshahzadvu91@gmail.com
-// 3. Add an email service (Gmail)
-// 4. Create an email template
-// 5. Get your credentials from the dashboard and replace below
+// Web3Forms Configuration
+// Get your FREE access key from: https://web3forms.com
+// 1. Go to https://web3forms.com
+// 2. Enter your email: amirshahzadvu91@gmail.com
+// 3. Click "Create Access Key"
+// 4. Check your email and copy the access key
+// 5. Replace YOUR_ACCESS_KEY below
 
-export const EMAILJS_CONFIG = {
-  SERVICE_ID: 'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-  TEMPLATE_ID: 'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
-  PUBLIC_KEY: 'YOUR_PUBLIC_KEY', // Replace with your EmailJS public key
+export const WEB3FORMS_CONFIG = {
+  ACCESS_KEY: 'YOUR_ACCESS_KEY', // Get from https://web3forms.com
+  RECIPIENT_EMAIL: 'amirshahzadvu91@gmail.com',
 }
-
-// Template Variables (use these in your EmailJS template):
-// {{from_name}} - User's full name (firstName + lastName)
-// {{from_email}} - User's email
-// {{phone}} - User's phone number
-// {{message}} - User's message
-// {{to_email}} - Your email (amirshahzadvu91@gmail.com)
 

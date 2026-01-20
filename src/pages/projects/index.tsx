@@ -1,5 +1,6 @@
 import yelling1 from "../../assets/yelling-1.png"
 import MPDark from "../../assets/MPDark.svg"
+import hero from "../../assets/hero.svg"
 import { Button } from "../../components/ui/button"
 import { Eye } from "lucide-react"
 
@@ -12,8 +13,7 @@ export const Projects = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                 <div className='' data-aos="fade-up" data-aos-duration="1000">
                     <div
-                        className='bg-white rounded-2xl p-4 cursor-pointer hover:shadow-xl'
-                        onClick={() => window.open('https://yellingant.com/', '_blank')}
+                        className='bg-white rounded-2xl p-4 hover:shadow-xl'
                     >
                         <div className='flex flex-col gap-4'>
                             <div className='w-full h-48 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center'>
@@ -37,7 +37,7 @@ export const Projects = () => {
                     </div>
                 </div>
                 <div className='' data-aos="fade-right" data-aos-duration="1000">
-                    <div className='bg-white rounded-2xl p-4 cursor-pointer hover:shadow-xl'>
+                    <div className='bg-white rounded-2xl p-4 hover:shadow-xl'>
                         <div className='flex flex-col gap-4'>
                             <div className='w-full h-48 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center'>
                                 <img
@@ -60,9 +60,25 @@ export const Projects = () => {
                     </div>
                 </div>
                 <div className='' data-aos="fade-left" data-aos-duration="1000">
-                    <div className='bg-white rounded-2xl p-6'>
-                        <div className='flex items-center gap-2'>
-                            <div className='w-12 h-12 bg-orange-500 rounded-full'></div>
+                    <div className='bg-white rounded-2xl p-4 hover:shadow-xl'>
+                        <div className='flex flex-col gap-4'>
+                            <div className='w-full h-48 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center'>
+                                <img
+                                    src={hero}
+                                    alt="Ambakeo AI"
+                                    className='w-full h-full object-cover transition-all duration-300 hover:scale-110'
+                                />
+                            </div>
+                            <div className='flex flex-col gap-2'>
+                                <h3 className='text-xl font-bold text-gray-800'>Ambakeo AI</h3>
+                                <p className='text-sm text-gray-600'>AI-powered cake ordering platform</p>
+                            </div>
+                            <Button
+                                onClick={() => window.open('https://ambakeoai.vercel.app/', '_blank')}
+                                className='w-full bg-orange-500 text-white hover:bg-orange-500/80 hover:text-white'>
+                                <Eye className='w-4 h-4' />
+                                Live Preview
+                            </Button>
                         </div>
                     </div>
                 </div>

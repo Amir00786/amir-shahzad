@@ -1,6 +1,8 @@
 import { Mail, MapPin, Phone } from "lucide-react"
 import { useState } from "react"
 import { useToast } from "../../components/ui/use-toast"
+import emailjs from '@emailjs/browser'
+import { EMAILJS_CONFIG } from "../../config/emailjs"
 
 interface FormData {
     firstName: string
@@ -91,11 +93,21 @@ export const Contact = () => {
         setIsSubmitting(true)
 
         try {
-            // Simulate API call
-            await new Promise(resolve => setTimeout(resolve, 1500))
+            // Send email using EmailJS
+            const templateParams = {
+                from_name: `${formData.firstName} ${formData.lastName}`,
+                from_email: formData.email,
+                phone: formData.phone,
+                message: formData.message,
+                to_email: 'amirshahzadvu91@gmail.com',
+            }
 
-            // Here you would normally send data to your backend
-            console.log('Form submitted:', formData)
+            await emailjs.send(
+                EMAILJS_CONFIG.SERVICE_ID,
+                EMAILJS_CONFIG.TEMPLATE_ID,
+                templateParams,
+                EMAILJS_CONFIG.PUBLIC_KEY
+            )
 
             toast({
                 variant: "success",
@@ -111,10 +123,11 @@ export const Contact = () => {
                 message: ''
             })
         } catch (error) {
+            console.error('EmailJS Error:', error)
             toast({
                 variant: "destructive",
                 title: "Error",
-                description: "Failed to send message. Please try again.",
+                description: "Failed to send message. Please try again or contact directly at amirshahzadvu91@gmail.com",
             })
         } finally {
             setIsSubmitting(false)

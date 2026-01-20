@@ -1,4 +1,5 @@
 import yelling1 from "../../assets/yelling-1.png"
+import MPDark from "../../assets/MPDark.svg"
 import { Button } from "../../components/ui/button"
 import { Eye } from "lucide-react"
 
@@ -26,9 +27,9 @@ export const Projects = () => {
                                 <h3 className='text-xl font-bold text-gray-800'>Yelling Ant</h3>
                                 <p className='text-sm text-gray-600'>Culture-centered social media network</p>
                             </div>
-                            <Button 
-                            onClick={() => window.open('https://yellingant.com/', '_blank')}
-                            className='w-full bg-orange-500 text-white hover:bg-orange-500/80 hover:text-white'>
+                            <Button
+                                onClick={() => window.open('https://yellingant.com/', '_blank')}
+                                className='w-full bg-orange-500 text-white hover:bg-orange-500/80 hover:text-white'>
                                 <Eye className='w-4 h-4' />
                                 Live Preview
                             </Button>
@@ -36,9 +37,25 @@ export const Projects = () => {
                     </div>
                 </div>
                 <div className='' data-aos="fade-right" data-aos-duration="1000">
-                    <div className='bg-white rounded-2xl p-6'>
-                        <div className='flex items-center gap-2'>
-                            <div className='w-12 h-12 bg-orange-500 rounded-full'></div>
+                    <div className='bg-white rounded-2xl p-4 cursor-pointer hover:shadow-xl'>
+                        <div className='flex flex-col gap-4'>
+                            <div className='w-full h-48 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center'>
+                                <img
+                                    src={MPDark}
+                                    alt="Project"
+                                    className='w-full h-full object-cover transition-all duration-300 hover:scale-110'
+                                />
+                            </div>
+                            <div className='flex flex-col gap-2'>
+                                <h3 className='text-xl font-bold text-gray-800'>Project Title</h3>
+                                <p className='text-sm text-gray-600'>Project description</p>
+                            </div>
+                            <Button
+                                onClick={() => window.open('https://chronly.ai/', '_blank')}
+                                className='w-full bg-orange-500 text-white hover:bg-orange-500/80 hover:text-white'>
+                                <Eye className='w-4 h-4' />
+                                Live Preview
+                            </Button>
                         </div>
                     </div>
                 </div>

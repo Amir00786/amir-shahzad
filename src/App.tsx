@@ -9,16 +9,23 @@ import { Services } from './pages/services'
 // import { Skills } from './pages/skills'
 import { WhatClientSay } from './pages/what-client-say'
 import { Toaster } from './components/ui/toaster'
-import { useEffect } from 'react'
+import { SplashScreen } from './components/SplashScreen'
+import { useEffect, useState } from 'react'
 import AOS from 'aos'
 
 function App() {
+  const [showSplash, setShowSplash] = useState(true)
+
   useEffect(() => {
     AOS.init({
       duration: 1000, // animation duration in ms
       once: true,     // animate only once per element
     })
   }, [])
+
+  if (showSplash) {
+    return <SplashScreen onComplete={() => setShowSplash(false)} />
+  }
 
   return (
     <>

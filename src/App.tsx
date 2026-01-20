@@ -8,6 +8,7 @@ import { Projects } from './pages/projects'
 import { Services } from './pages/services'
 // import { Skills } from './pages/skills'
 import { WhatClientSay } from './pages/what-client-say'
+import { Toaster } from './components/ui/toaster'
 import { useEffect } from 'react'
 import AOS from 'aos'
 
@@ -46,6 +47,7 @@ function App() {
         </section>
       </div>
       <Footer />
+      <Toaster />
     </>
   )
 }

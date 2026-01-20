@@ -47,8 +47,8 @@ export const Projects = () => {
                                 />
                             </div>
                             <div className='flex flex-col gap-2'>
-                                <h3 className='text-xl font-bold text-gray-800'>Project Title</h3>
-                                <p className='text-sm text-gray-600'>Project description</p>
+                                <h3 className='text-xl font-bold text-gray-800'>Chronly.AI</h3>
+                                <p className='text-sm text-gray-600'>AI-powered time tracking and productivity tool</p>
                             </div>
                             <Button
                                 onClick={() => window.open('https://chronly.ai/', '_blank')}

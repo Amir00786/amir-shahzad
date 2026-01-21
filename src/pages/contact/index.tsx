@@ -1,7 +1,6 @@
 import { Mail, MapPin, Phone } from "lucide-react"
 import { useState } from "react"
 import { useToast } from "../../components/ui/use-toast"
-import { WEB3FORMS_CONFIG } from "../../config/emailjs"
 
 interface FormData {
     firstName: string
@@ -92,27 +91,21 @@ export const Contact = () => {
         setIsSubmitting(true)
 
         try {
-            // Send email using Web3Forms
-            const response = await fetch('https://api.web3forms.com/submit', {
+            // Send email using Formspree
+            const response = await fetch('https://formspree.io/f/xwppwrgr', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    access_key: WEB3FORMS_CONFIG.ACCESS_KEY,
                     name: `${formData.firstName} ${formData.lastName}`,
                     email: formData.email,
                     phone: formData.phone,
                     message: formData.message,
-                    to: WEB3FORMS_CONFIG.RECIPIENT_EMAIL,
-                    subject: `New Contact Form Message from ${formData.firstName} ${formData.lastName}`,
-                    from_name: 'Portfolio Contact Form',
                 }),
             })
 
-            const result = await response.json()
-
-            if (result.success) {
+            if (response.ok) {
                 toast({
                     variant: "success",
                     title: "Success!",
@@ -127,7 +120,7 @@ export const Contact = () => {
                     message: ''
                 })
             } else {
-                throw new Error(result.message || 'Failed to send message')
+                throw new Error('Failed to send message')
             }
         } catch (error) {
             console.error('Form Error:', error)

@@ -12,10 +12,10 @@ export const Banner = () => {
         const fileUrl = '/amirshahzad.pdf';
         const link = document.createElement('a');
         link.href = fileUrl;
-            link.download = 'amirshahzad.pdf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+        link.download = 'amirshahzad.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     };
 
     useEffect(() => {
@@ -66,10 +66,11 @@ export const Banner = () => {
                         </span>
                     </h1>
                     <p className="text-sm sm:text-base lg:text-lg mb-8">
-                        I am a passionate and dedicated frontend developer with over{" "}
-                        <strong>4<sup className="text-orange-500">+</sup></strong> years of experience, specializing in crafting user-friendly and high-performance web applications.
-                        With a strong foundation in HTML, CSS, JavaScript, Reactjs, Nextjs, Tailwindcss, and Bootstrap,
-                        I focus on building seamless, responsive interfaces that deliver exceptional user experiences.
+                        I am a passionate and dedicated frontend developer with over 4<sup className="text-orange-500">+</sup> years of experience, specializing in 
+                        crafting user-friendly and high-performance web applications. With a strong foundation in HTML, CSS, JavaScript, 
+                        React.js, Next.js, Tailwind CSS, and Bootstrap, I focus on building seamless, responsive interfaces. I also have 
+                        hands-on experience in API integration, including consuming RESTful APIs, handling asynchronous data flows, managing 
+                        state, and integrating backend services to deliver dynamic and scalable web applications with exceptional user experiences.
                     </p>
                     <Button
                         onClick={handleDownload}

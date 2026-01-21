@@ -28,7 +28,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className='bg-white dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen transition-colors duration-300'>
       <Header />
       <div className='mx-auto px-4 max-w-[1440px]'>
         <section id="home">
@@ -55,7 +55,7 @@ function App() {
       </div>
       <Footer />
       <Toaster />
-    </>
+    </div>
   )
 }
 

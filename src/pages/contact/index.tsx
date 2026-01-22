@@ -188,7 +188,7 @@ export const Contact = () => {
                                     id="firstName"
                                     value={formData.firstName}
                                     onChange={handleChange}
-                                    className={`border px-8 h-12 dark:text-orange-500 text-stone-900 bg-transparent ${errors.firstName ? 'border-orange-500' : 'border-orange-500'} rounded-full p-2 focus:outline-none`}
+                                    className={`border px-8 h-12 dark:text-white text-stone-900 bg-transparent ${errors.firstName ? 'border-orange-500' : 'border-orange-500'} rounded-full p-2 focus:outline-none`}
                                 />
                                 <span className="text-orange-500 text-xs min-h-4 block">
                                     {errors.firstName || '\u00A0'}
@@ -203,7 +203,7 @@ export const Contact = () => {
                                     id="lastName"
                                     value={formData.lastName}
                                     onChange={handleChange}
-                                    className={`border px-8 h-12 dark:text-orange-500 text-stone-900 bg-transparent ${errors.lastName ? 'border-orange-500' : 'border-orange-500'} rounded-full p-2 focus:outline-none`}
+                                    className={`border px-8 h-12 dark:text-white text-stone-900 bg-transparent ${errors.lastName ? 'border-orange-500' : 'border-orange-500'} rounded-full p-2 focus:outline-none`}
                                 />
                                 <span className="text-orange-500 text-xs min-h-4 block">
                                     {errors.lastName || '\u00A0'}
@@ -218,7 +218,7 @@ export const Contact = () => {
                                     id="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className={`border px-8 h-12 dark:text-orange-500 text-stone-900 bg-transparent ${errors.email ? 'border-orange-500' : 'border-orange-500'} rounded-full p-2 focus:outline-none`}
+                                    className={`border px-8 h-12 dark:text-white text-stone-900 bg-transparent ${errors.email ? 'border-orange-500' : 'border-orange-500'} rounded-full p-2 focus:outline-none`}
                                 />
                                 <span className="text-orange-500 text-xs min-h-4 block">
                                     {errors.email || '\u00A0'}
@@ -233,7 +233,7 @@ export const Contact = () => {
                                     id="phone"
                                     value={formData.phone}
                                     onChange={handleChange}
-                                    className={`border px-8 h-12 dark:text-orange-500 text-stone-900 bg-transparent ${errors.phone ? 'border-orange-500' : 'border-orange-500'} rounded-full p-2 focus:outline-none`}
+                                    className={`border px-8 h-12 dark:text-white text-stone-900 bg-transparent ${errors.phone ? 'border-orange-500' : 'border-orange-500'} rounded-full p-2 focus:outline-none`}
                                 />
                                 <span className="text-orange-500 text-xs min-h-4 block">
                                     {errors.phone || '\u00A0'}
@@ -248,7 +248,7 @@ export const Contact = () => {
                                 id="message"
                                 value={formData.message}
                                 onChange={handleChange}
-                                className={`border w-full resize-none px-8 h-32 dark:text-orange-500 text-stone-900 bg-transparent ${errors.message ? 'border-orange-500' : 'border-orange-500'} rounded-md p-2 focus:outline-none`}
+                                className={`border w-full resize-none px-8 h-32 dark:text-white text-stone-900 bg-transparent ${errors.message ? 'border-orange-500' : 'border-orange-500'} rounded-md p-2 focus:outline-none`}
                             />
                             <span className="text-orange-500 text-xs min-h-4 block">
                                 {errors.message || '\u00A0'}

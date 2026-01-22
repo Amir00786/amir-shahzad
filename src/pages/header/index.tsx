@@ -36,10 +36,10 @@ export const Header = () => {
 
     return (
         <header
-            className="py-6 border-b border-white/20 dark:border-stone-900 fixed top-0 left-0 right-0 z-50 bg-white dark:bg-stone-900 transition-colors duration-300"
+            className="py-6 border-b dark:border-orange-500 fixed top-0 left-0 right-0 z-50 bg-zinc-300 border-stone-900 dark:bg-stone-900 transition-colors duration-300"
             data-aos="fade-down"
             data-aos-duration="2000"
-        >``
+        >
             <div className="flex justify-between items-center mx-auto px-4 max-w-[1440px]">
                 <strong>
                     <a
@@ -52,7 +52,7 @@ export const Header = () => {
                 <div className="flex items-center gap-4">
                     <button
                         onClick={toggleTheme}
-                        className="p-2 rounded-full hover:bg-orange-500/20 transition-colors duration-300"
+                        className="p-2 rounded-full cursor-pointer hover:bg-orange-500/20 transition-colors duration-300"
                         aria-label="Toggle theme"
                     >
                         {theme === 'dark' ? (
@@ -81,7 +81,7 @@ export const Header = () => {
                                 <li key={link.name}>
                                     <a
                                         href={link.href}
-                                        className="text-base py-1 px-3 lg:px-5 hover:bg-orange-500 hover:rounded-full transition-all duration-300"
+                                        className="text-base py-1 px-3 lg:px-5 dark:text-white text-stone-900 hover:bg-orange-500 hover:rounded-full transition-all duration-300"
                                     >
                                         {link.name}
                                     </a>
@@ -93,11 +93,10 @@ export const Header = () => {
             </div>
             {/* Mobile Overlay */}
             <div
-                className={`fixed inset-0 z-30 xl:hidden transition-opacity duration-300 ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+                className={`fixed inset-0 top-0 left-0 right-0 bottom-0 z-30 xl:hidden transition-opacity duration-300 ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
                     }`}
             >
-                <div className="absolute inset-0 bg-black/50"></div>
-                {/* Sidebar */}
+                <div className="fixed inset-0 bg-black/50"></div>
                 <div
                     ref={menuRef}
                     className={`absolute top-0 h-screen right-0 w-64 bg-stone-800 dark:bg-gray-800 text-white transform transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"

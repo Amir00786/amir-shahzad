@@ -7,7 +7,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 export const WhatClientSay = () => {
     return (
         <div className="md:py-20 sm:py-8 py-4" id="testimonials">
-            <h1 className="text-3xl sm:mt-3 mt-20 md:text-5xl lg:mb-16 mb-8 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px] ">
+            <h1 className="text-3xl sm:mt-3 mt-20 md:text-5xl lg:mb-16 mb-8 uppercase text-transparent dark:stroke-orange-500 stroke-stone-900">
                 What Client Say
             </h1>
 

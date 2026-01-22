@@ -136,39 +136,39 @@ export const Contact = () => {
 
     return (
         <div className="md:py-20 sm:py-8 py-4" id="contact">
-            <h1 className="text-3xl sm:mt-3 mt-20 md:text-5xl lg:mb-16 mb-8 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]">
+            <h1 className="text-3xl sm:mt-3 mt-20 md:text-5xl lg:mb-16 mb-8 uppercase text-transparent dark:stroke-orange-500 stroke-stone-900">
                 Get In Touch
             </h1>
             <div className="flex flex-col md:flex-row gap-x-4">
                 <div className='2xl:w-1/3 md:w-1/2 w-full' data-aos="zoom-in-right" data-aos-duration="2000">
                     <div className="border-b md:border-b-0 mb-5 gap-y-5 md:gap-0 md:border-r border-orange-500 h-full flex flex-col justify-between pb-8 md:pr-8">
-                        <div className='bg-white rounded-2xl p-4 lg:p-6'>
+                        <div className='bg-white dark:bg-stone-800 rounded-2xl p-4 lg:p-6'>
                             <div className='flex items-center gap-2 sm:gap-4'>
                                 <div className='w-10 sm:w-12 h-10 sm:h-12 shrink-0 bg-orange-500 rounded-full flex items-center justify-center'>
-                                    <Phone className="w-5 sm:w-6 h-5 sm:h-6" />
+                                    <Phone className="w-5 sm:w-6 h-5 sm:h-6 text-white" />
                                 </div>
                                 <div className="flex flex-col">
-                                    <a href="tel:+923076258337" className="text-sm sm:text-base lg:text-xl text-gray-500 font-bold hover:text-orange-500 transition-colors">+92 3076258337</a>
+                                    <a href="tel:+923076258337" className="text-sm sm:text-base lg:text-xl text-gray-700 dark:text-gray-300 font-bold hover:text-orange-500 transition-colors">+92 3076258337</a>
                                 </div>
                             </div>
                         </div>
-                        <div className='bg-white rounded-2xl p-4 lg:p-6'>
+                        <div className='bg-white dark:bg-stone-800 rounded-2xl p-4 lg:p-6'>
                             <div className='flex items-center gap-2 sm:gap-4'>
                                 <div className='w-10 sm:w-12 h-10 sm:h-12 shrink-0 bg-orange-500 rounded-full flex items-center justify-center'>
-                                    <Mail className="w-5 sm:w-6 h-5 sm:h-6" />
+                                    <Mail className="w-5 sm:w-6 h-5 sm:h-6 text-white" />
                                 </div>
                                 <div className="flex flex-col">
-                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=amirshahzadvu91@gmail.com" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-base lg:text-xl text-gray-500 font-bold hover:text-orange-500 transition-colors break-all">amirshahzadvu91@gmail.com</a>
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=amirshahzadvu91@gmail.com" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-base lg:text-xl text-gray-700 dark:text-gray-300 font-bold hover:text-orange-500 transition-colors break-all">amirshahzadvu91@gmail.com</a>
                                 </div>
                             </div>
                         </div>
-                        <div className='bg-white rounded-2xl p-4 lg:p-6'>
+                        <div className='bg-white dark:bg-stone-800 rounded-2xl p-4 lg:p-6'>
                             <div className='flex items-center gap-2 sm:gap-4'>
                                 <div className='w-10 sm:w-12 h-10 sm:h-12 shrink-0 bg-orange-500 rounded-full flex items-center justify-center'>
-                                    <MapPin className="w-5 sm:w-6 h-5 sm:h-6" />
+                                    <MapPin className="w-5 sm:w-6 h-5 sm:h-6 text-white" />
                                 </div>
                                 <div className="flex flex-col">
-                                    <strong className="text-sm sm:text-base lg:text-xl text-gray-500">
+                                    <strong className="text-sm sm:text-base lg:text-xl text-gray-700 dark:text-gray-300">
                                         Gujranwala, Punjab, Pakistan
                                     </strong>
                                 </div>
@@ -177,7 +177,7 @@ export const Contact = () => {
                     </div>
                 </div>
                 <div className="grow basis-0 min-w-0 mx-auto" data-aos="zoom-in-left" data-aos-duration="2000">
-                    <form onSubmit={handleSubmit} className="border border-orange-500 rounded-md p-4 2xl:max-w-3xl mx-auto">
+                    <form onSubmit={handleSubmit} className="border border-orange-500 bg-transparent dark:bg-transparent rounded-md p-4 2xl:max-w-3xl mx-auto">
                         <div className="flex flex-wrap -mx-4 gap-y-4">
                             <div className="flex flex-col gap-y-2 w-full lg:w-1/2 px-4">
                                 <label htmlFor="firstName" className="text-sm font-medium">First Name</label>

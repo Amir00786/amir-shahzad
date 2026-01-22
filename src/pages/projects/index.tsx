@@ -8,16 +8,16 @@ import { Eye } from "lucide-react"
 export const Projects = () => {
     return (
         <div className='md:py-20 sm:py-8 py-4' id="projects">
-            <h1 className="text-4xl sm:mt-3 mt-20 md:text-5xl lg:mb-16 mb-8 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]" data-aos="fade-up" data-aos-duration="2000">
+            <h1 className="text-4xl sm:mt-3 mt-20 md:text-5xl lg:mb-16 mb-8 uppercase text-transparent dark:stroke-orange-500 stroke-stone-900" data-aos="fade-up" data-aos-duration="2000">
                 My Work
             </h1>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                 <div className='' data-aos="fade-up" data-aos-duration="1000">
                     <div
-                        className='bg-white rounded-2xl p-4 hover:shadow-xl'
+                        className='bg-white dark:bg-stone-800 rounded-2xl p-4 hover:shadow-xl dark:hover:shadow-orange-500/20 transition-all duration-300'
                     >
                         <div className='flex flex-col gap-4'>
-                            <div className='w-full h-48 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center'>
+                            <div className='w-full h-48 bg-gray-100 dark:bg-gray-700 rounded-xl overflow-hidden flex items-center justify-center'>
                                 <img
                                     src={yelling1}
                                     alt="Yelling Ant"
@@ -25,8 +25,8 @@ export const Projects = () => {
                                 />
                             </div>
                             <div className='flex flex-col gap-2'>
-                                <h3 className='text-xl font-bold text-gray-800'>Yelling Ant</h3>
-                                <p className='text-sm text-gray-600 line-clamp-2'>
+                                <h3 className='text-xl font-bold text-gray-800 dark:text-white'>Yelling Ant</h3>
+                                <p className='text-sm text-gray-600 dark:text-gray-300 line-clamp-2'>
                                     Culture-centered social media network featuring a user-friendly interface, content sharing, community engagement, and real-time notifications with customizable profile and post options.
                                 </p>
                             </div>
@@ -40,9 +40,9 @@ export const Projects = () => {
                     </div>
                 </div>
                 <div className='' data-aos="fade-right" data-aos-duration="1000">
-                    <div className='bg-white rounded-2xl p-4 hover:shadow-xl'>
+                    <div className='bg-white dark:bg-stone-800 rounded-2xl p-4 hover:shadow-xl dark:hover:shadow-orange-500/20 transition-all duration-300'>
                         <div className='flex flex-col gap-4'>
-                            <div className='w-full h-48 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center'>
+                            <div className='w-full h-48 bg-gray-100 dark:bg-gray-700 rounded-xl overflow-hidden flex items-center justify-center'>
                                 <img
                                     src={MPDark}
                                     alt="Project"
@@ -50,8 +50,8 @@ export const Projects = () => {
                                 />
                             </div>
                             <div className='flex flex-col gap-2'>
-                                <h3 className='text-xl font-bold text-gray-800'>Chronly.AI</h3>
-                                <p className='text-sm text-gray-600 line-clamp-2'>
+                                <h3 className='text-xl font-bold text-gray-800 dark:text-white'>Chronly.AI</h3>
+                                <p className='text-sm text-gray-600 dark:text-gray-300 line-clamp-2'>
                                     AI-powered time tracking and productivity tool featuring a user-friendly interface, task management, time tracking, and productivity analytics with real-time reporting and insights.
 
                                 </p>
@@ -66,9 +66,9 @@ export const Projects = () => {
                     </div>
                 </div>
                 <div className='' data-aos="fade-left" data-aos-duration="1000">
-                    <div className='bg-white rounded-2xl p-4 hover:shadow-xl'>
+                    <div className='bg-white dark:bg-stone-800 rounded-2xl p-4 hover:shadow-xl dark:hover:shadow-orange-500/20 transition-all duration-300'>
                         <div className='flex flex-col gap-4'>
-                            <div className='w-full h-48 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center'>
+                            <div className='w-full h-48 bg-gray-100 dark:bg-gray-700 rounded-xl overflow-hidden flex items-center justify-center'>
                                 <img
                                     src={hero}
                                     alt="Ambakeo AI"
@@ -76,8 +76,8 @@ export const Projects = () => {
                                 />
                             </div>
                             <div className='flex flex-col gap-2'>
-                                <h3 className='text-xl font-bold text-gray-800'>Ambakeo AI</h3>
-                                <p className='text-sm text-gray-600 line-clamp-2'>
+                                <h3 className='text-xl font-bold text-gray-800 dark:text-white'>Ambakeo AI</h3>
+                                <p className='text-sm text-gray-600 dark:text-gray-300 line-clamp-2'>
                                     Premium bakery and cake shop platform featuring a user-friendly interface, product catalog, online ordering, and secure payment processing with real-time inventory management and order tracking.
                                 </p>
                             </div>
@@ -91,9 +91,9 @@ export const Projects = () => {
                     </div>
                 </div>
                 <div className='' data-aos="zoom-in" data-aos-duration="1000">
-                    <div className='bg-white rounded-2xl p-4 hover:shadow-xl'>
+                    <div className='bg-white dark:bg-stone-800 rounded-2xl p-4 hover:shadow-xl dark:hover:shadow-orange-500/20 transition-all duration-300'>
                         <div className='flex flex-col gap-4'>
-                            <div className='w-full h-48 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center'>
+                            <div className='w-full h-48 bg-gray-100 dark:bg-gray-700 rounded-xl overflow-hidden flex items-center justify-center'>
                                 <img
                                     src={blog5}
                                     alt="Spa Salon"
@@ -101,8 +101,8 @@ export const Projects = () => {
                                 />
                             </div>
                             <div className='flex flex-col gap-2'>
-                                <h3 className='text-xl font-bold text-gray-800'>Velvet Spa Salon</h3>
-                                <p className='text-sm text-gray-600 line-clamp-2'>Professional hair styling and barber services platform featuring expert stylists, beard treatments, color services, and premium salon experiences with online booking and pricing management.</p>
+                                <h3 className='text-xl font-bold text-gray-800 dark:text-white'>Velvet Spa Salon</h3>
+                                <p className='text-sm text-gray-600 dark:text-gray-300 line-clamp-2'>Professional hair styling and barber services platform featuring expert stylists, beard treatments, color services, and premium salon experiences with online booking and pricing management.</p>
                             </div>
                             <Button
                                 onClick={() => window.open('https://spa-salon-velvetcom.vercel.app/', '_blank')}
@@ -114,14 +114,14 @@ export const Projects = () => {
                     </div>
                 </div>
                 <div className='' data-aos="flip-left" data-aos-duration="1000">
-                    <div className='bg-white rounded-2xl p-6'>
+                    <div className='bg-white dark:bg-stone-800 rounded-2xl p-6 transition-colors duration-300'>
                         <div className='flex items-center gap-2'>
                             <div className='w-12 h-12 bg-orange-500 rounded-full'></div>
                         </div>
                     </div>
                 </div>
                 <div className='' data-aos="flip-right" data-aos-duration="1000">
-                    <div className='bg-white rounded-2xl p-6'>
+                    <div className='bg-white dark:bg-stone-800 rounded-2xl p-6 transition-colors duration-300'>
                         <div className='flex items-center gap-2'>
                             <div className='w-12 h-12 bg-orange-500 rounded-full'></div>
                         </div>

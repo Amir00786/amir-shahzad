@@ -8,12 +8,12 @@ import figma from "../../assets/figma.png";
 export const Services = () => {
     return (
         <div className="md:py-20 sm:py-8 py-4" id="services">
-            <h1 className="text-3xl sm:mt-3 mt-20 md:text-5xl lg:mb-16 mb-8 uppercase font-extrabold text-transparent stroke-orange-500 stroke-[2px]">
+            <h1 className="text-3xl sm:mt-3 mt-20 md:text-5xl lg:mb-16 mb-8 uppercase text-transparent dark:stroke-orange-500 stroke-stone-900">
                 What I Offer
             </h1>
             <div data-aos="fade-up" data-aos-duration="2000">
                 <div className='flex gap-y-6 flex-wrap -mx-3 mb-8 px-4'>
-                    <p className='text-white text-sm sm:text-base lg:text-lg'>
+                    <p className='text-gray-700 dark:text-white text-sm sm:text-base lg:text-lg'>
                         We specialize in creating modern, responsive websites that are both visually appealing and user-friendly. Our designs are tailored to reflect your brand’s identity while ensuring optimal functionality across all devices. Whether you're launching a new business or revamping an existing site, our web design services can give you the competitive edge you need. From layout planning and UX/UI optimization to mobile responsiveness and SEO integration, we handle it all. We use the latest tools such as Figma and Adobe XD to bring your vision to life. Let us design a digital space that not only looks great but also drives results. Contact us today to get started!
                     </p>
                 </div>
@@ -22,7 +22,7 @@ export const Services = () => {
             <div className='flex gap-y-6 flex-wrap -mx-3'>
                 {/* HTML */}
                 <div className='md:w-1/3 sm:w-1/2 w-full px-3' data-aos="fade-up" data-aos-duration="1000">
-                    <div className="p-4 md:p-6 bg-orange-500/70 rounded-2xl h-full hover:bg-orange-600 transition-all duration-300 hover:text-black tracking-wide text-white">
+                    <div className="p-4 md:p-6 bg-stone-200 dark:bg-orange-500/70 rounded-2xl h-full transition-all duration-300 hover:bg-orange-500 hover:text-white dark:hover:text-black tracking-wide text-gray-900 dark:text-white">
                         <div className="md:mb-8 mb-5 flex items-center gap-x-4 md:gap-x-8">
                             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                                 <img src={html5} alt="HTML" className="w-8 h-8 object-cover" />
@@ -37,7 +37,7 @@ export const Services = () => {
 
                 {/* CSS */}
                 <div className='md:w-1/3 sm:w-1/2 w-full px-3' data-aos="fade-right" data-aos-duration="1000">
-                    <div className="p-4 md:p-6 bg-orange-500/70 rounded-2xl h-full hover:bg-orange-600 transition-all duration-300 hover:text-black tracking-wide text-white">
+                    <div className="p-4 md:p-6 bg-stone-200 dark:bg-orange-500/70 rounded-2xl h-full hover:bg-orange-500 hover:text-white dark:hover:bg-orange-600 dark:hover:text-black transition-all duration-300 tracking-wide text-gray-900 dark:text-white">
                         <div className="md:mb-8 mb-5 flex items-center gap-x-4 md:gap-x-8">
                             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                                 <img src={css3} alt="CSS" className="w-8 h-8 object-cover" />
@@ -52,7 +52,7 @@ export const Services = () => {
 
                 {/* JavaScript */}
                 <div className='md:w-1/3 sm:w-1/2 w-full px-3' data-aos="fade-left" data-aos-duration="1000">
-                    <div className="p-4 md:p-6 bg-orange-500/70 rounded-2xl h-full hover:bg-orange-600 transition-all duration-300 hover:text-black tracking-wide text-white">
+                    <div className="p-4 md:p-6 bg-stone-200 dark:bg-orange-500/70 rounded-2xl h-full hover:bg-orange-500 hover:text-white dark:hover:bg-orange-600 dark:hover:text-black transition-all duration-300 tracking-wide text-gray-900 dark:text-white">
                         <div className="md:mb-8 mb-5 flex items-center gap-x-4 md:gap-x-8">
                             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                                 <img src={js} alt="JavaScript" className="w-8 h-8 object-cover" />
@@ -67,7 +67,7 @@ export const Services = () => {
 
                 {/* React */}
                 <div className='md:w-1/3 sm:w-1/2 w-full px-3' data-aos="zoom-in" data-aos-duration="1000">
-                    <div className="p-4 md:p-6 bg-orange-500/70 rounded-2xl h-full hover:bg-orange-600 transition-all duration-300 hover:text-black tracking-wide text-white">
+                    <div className="p-4 md:p-6 bg-stone-200 dark:bg-orange-500/70 rounded-2xl h-full hover:bg-orange-500 hover:text-white dark:hover:bg-orange-600 dark:hover:text-black transition-all duration-300 tracking-wide text-gray-900 dark:text-white">
                         <div className="md:mb-8 mb-5 flex items-center gap-x-4 md:gap-x-8">
                             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                                 <img src={react} alt="React" className="w-8 h-8 object-cover" />
@@ -82,7 +82,7 @@ export const Services = () => {
 
                 {/* Tailwind CSS */}
                 <div className='md:w-1/3 sm:w-1/2 w-full px-3' data-aos="flip-left" data-aos-duration="1000">
-                    <div className="p-4 md:p-6 bg-orange-500/70 rounded-2xl h-full hover:bg-orange-600 transition-all duration-300 hover:text-black tracking-wide text-white">
+                    <div className="p-4 md:p-6 bg-stone-200 dark:bg-orange-500/70 rounded-2xl h-full hover:bg-orange-500 hover:text-white dark:hover:bg-orange-600 dark:hover:text-black transition-all duration-300 tracking-wide text-gray-900 dark:text-white">
                         <div className="md:mb-8 mb-5 flex items-center gap-x-4 md:gap-x-8">
                             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                                 <img src={tailwind} alt="Tailwind CSS" className="w-8 h-8 object-cover" />
@@ -97,7 +97,7 @@ export const Services = () => {
 
                 {/* Figma */}
                 <div className='md:w-1/3 sm:w-1/2 w-full px-3' data-aos="flip-right" data-aos-duration="1000">
-                    <div className="p-4 md:p-6 bg-orange-500/70 rounded-2xl h-full hover:bg-orange-600 transition-all duration-300 hover:text-black tracking-wide text-white">
+                    <div className="p-4 md:p-6 bg-stone-200 dark:bg-orange-500/70 rounded-2xl h-full hover:bg-orange-500 hover:text-white dark:hover:bg-orange-600 dark:hover:text-black transition-all duration-300 tracking-wide text-gray-900 dark:text-white">
                         <div className="md:mb-8 mb-5 flex items-center gap-x-4 md:gap-x-8">
                             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
                                 <img src={figma} alt="Figma" className="w-8 h-8 object-cover" />

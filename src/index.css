@@ -142,6 +142,19 @@ body {
   color: #f97316;
 }
 
+.stroke-stone-900 {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #1c1917;
+  text-transform: uppercase;
+  color: #1c1917;
+}
+
+.dark .dark\:stroke-orange-500 {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px #f97316;
+  color: #f97316;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

@@ -92,7 +92,7 @@ export const Banner = () => {
 
                         }}>
                         <div
-                            className="absolute -top-1/2 left-1/2 -translate-x-1/2 rounded-full w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] xl:w-[450px] xl:h-[450px] overflow-visible transition-all duration-300 before:absolute before:-inset-[2px] before:rounded-full before:bg-[conic-gradient(from_0deg,#f97316_0%,#f97316_22.5%,transparent_22.5%,transparent_50%,#f97316_50%,#f97316_72.5%,transparent_72.5%,transparent_100%)] before:-z-10 before:animate-[spin_5s_linear_infinite]"
+                            className="absolute -top-1/2 left-1/2 -translate-x-1/2 rounded-full w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] xl:w-[450px] xl:h-[450px] overflow-visible transition-all duration-300 before:absolute before:-inset-[2px] before:rounded-full before:bg-[conic-gradient(from_0deg,#f97316_0%,#f97316_22.5%,transparent_22.5%,transparent_50%,#f97316_50%,#f97316_72.5%,transparent_72.5%,transparent_100%)] before:-z-10 before:[animation:fadeIn_1s_ease-in_forwards,spin_5s_linear_infinite]"
                         >
                             <img
                                 src={profile}

@@ -83,7 +83,8 @@ export const Banner = () => {
                 </div>
 
                 <div className="w-full lg:w-1/2 flex items-end justify-end px-4 pt-20 lg:pt-0" data-aos="flip-up" data-aos-duration="2000">
-                    <div className="relative w-full md:w-[450px] h-60 sm:h-80 lg:w-[590px] lg:h-96 rounded-4xl bg-orange-400/10 dark:bg-orange-500/20 overflow-visible transition-colors duration-300"
+                    <div 
+                    className="relative w-full md:w-[450px] h-60 sm:h-80 lg:w-[590px] lg:h-96 rounded-4xl bg-orange-400/10 dark:bg-orange-500/20 overflow-visible transition-colors duration-300"
                         style={{
                             backgroundImage: `url(${bgImage})`,
                             backgroundSize: 'cover',
@@ -91,7 +92,7 @@ export const Banner = () => {
 
                         }}>
                         <div
-                            className="absolute -top-1/2 left-1/2 -translate-x-1/2 rounded-full w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] xl:w-[450px] xl:h-[450px] overflow-hidden shadow-lg dark:shadow-orange-500/20 transition-all duration-300"
+                            className="absolute -top-1/2 left-1/2 -translate-x-1/2 rounded-full w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] xl:w-[450px] xl:h-[450px] overflow-visible transition-all duration-300 before:absolute before:-inset-[2px] before:rounded-full before:bg-[conic-gradient(from_0deg,#f97316_0%,#f97316_22.5%,transparent_22.5%,transparent_50%,#f97316_50%,#f97316_72.5%,transparent_72.5%,transparent_100%)] before:-z-10 before:animate-[spin_5s_linear_infinite]"
                         >
                             <img
                                 src={profile}

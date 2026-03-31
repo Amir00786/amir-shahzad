@@ -1,5 +1,4 @@
-import * as React from "react"
-import { Monitor, Layout, Smartphone, Palette, Code, Cpu, ArrowRight } from "lucide-react"
+import { Monitor, Layout, Smartphone, Code, Cpu, ArrowRight } from "lucide-react"
 // import Autoplay from "embla-carousel-autoplay"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../../components/ui/carousel"
 

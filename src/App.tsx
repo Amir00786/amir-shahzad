@@ -28,33 +28,35 @@ function App() {
   }
 
   return (
-    <div className='bg-zinc-300 dark:bg-stone-900 text-gray-900 dark:text-white min-h-screen transition-colors duration-300'>
-      <Header />
-      <div className='mx-auto px-4 max-w-[1440px]'>
-        <section id="home">
-          <Banner />
-        </section>
-        <section id="about">
-          <About />
-        </section>
-        <section>
-          <Projects />
-        </section>
-        <section id="services">
-          <Services />
-        </section>
-        {/* <section id="skills">
+    <div className='relative overflow-hidden'>
+      <div className='bg-zinc-300 dark:bg-neutral-900 text-gray-900 dark:text-white min-h-screen transition-colors duration-300'>
+        <Header />
+        <div className='mx-auto max-w-[1440px]'>
+          <section id="home">
+            <Banner />
+          </section>
+          <section id="about">
+            <About />
+          </section>
+          <section id="services">
+            <Services />
+          </section>
+          <section>
+            <Projects />
+          </section>
+          {/* <section id="skills">
           <Skills />
         </section> */}
-        <section id="testimonials">
-          <WhatClientSay />
-        </section>
-        <section id="contact">
-          <Contact />
-        </section>
+          <section id="testimonials">
+            <WhatClientSay />
+          </section>
+          <section id="contact">
+            <Contact />
+          </section>
+        </div>
+        <Footer />
+        <Toaster />
       </div>
-      <Footer />
-      <Toaster />
     </div>
   )
 }

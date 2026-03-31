@@ -1,115 +1,132 @@
-import html5 from "../../assets/html.png";
-import css3 from "../../assets/css3.png";
-import js from "../../assets/js.png";
-import react from "../../assets/react-logo.svg";
-import tailwind from "../../assets/tailwind.png";
-import figma from "../../assets/figma.png";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay, EffectFade } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+import { Monitor, Layout, Smartphone, Palette, Code, Cpu, ArrowRight } from "lucide-react";
 
 export const Services = () => {
+    const services = [
+        {
+            title: "Web Design",
+            description: "Creating visually stunning and modern website layouts that capture your brand's essence and engage users.",
+            icon: <Monitor className="w-10 h-10" />,
+        },
+        {
+            title: "UI/UX Design",
+            description: "Designing intuitive user interfaces and seamless experiences focusing on user psychology and behavior.",
+            icon: <Layout className="w-10 h-10" />,
+        },
+        {
+            title: "App Design",
+            description: "Crafting beautiful mobile application interfaces with a focus on usability and modern mobile trends.",
+            icon: <Smartphone className="w-10 h-10" />,
+        },
+        {
+            title: "Graphic Design",
+            description: "Creative visual content including branding, logos, and digital assets that make your business stand out.",
+            icon: <Palette className="w-10 h-10" />,
+        },
+        {
+            title: "Web Development",
+            description: "Building high-performance, scalable web applications using React.js, Next.js, and modern tech stacks.",
+            icon: <Code className="w-10 h-10" />,
+        },
+        {
+            title: "App Development",
+            description: "Turning complex ideas into functional mobile and web apps with clean code and robust architecture.",
+            icon: <Cpu className="w-10 h-10" />,
+        }
+    ];
+
     return (
-        <div className="md:py-20 sm:py-8 py-4" id="services">
-            <h1 className="text-3xl sm:mt-3 mt-20 md:text-5xl lg:mb-16 mb-8 uppercase text-transparent dark:stroke-orange-500 stroke-stone-900">
-                What I Offer
-            </h1>
-            <div data-aos="fade-up" data-aos-duration="2000">
-                <div className='flex gap-y-6 flex-wrap -mx-3 mb-8 px-4'>
-                    <p className='text-gray-700 dark:text-white text-sm sm:text-base lg:text-lg'>
-                        We specialize in creating modern, responsive websites that are both visually appealing and user-friendly. Our designs are tailored to reflect your brand’s identity while ensuring optimal functionality across all devices. Whether you're launching a new business or revamping an existing site, our web design services can give you the competitive edge you need. From layout planning and UX/UI optimization to mobile responsiveness and SEO integration, we handle it all. We use the latest tools such as Figma and Adobe XD to bring your vision to life. Let us design a digital space that not only looks great but also drives results. Contact us today to get started!
+        <section className="py-24 bg-[#0a0a0a] relative overflow-hidden" id="services">
+            {/* Background Decoration */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-orange-500/5 blur-[120px] rounded-full -z-10"></div>
+
+            <div className="max-w-[1440px] mx-auto px-6 w-full">
+                
+                {/* Header */}
+                <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
+                    <div className="max-w-2xl">
+                        <span className="text-orange-500 font-mono tracking-[0.3em] uppercase text-xs mb-4 block">My Offerings</span>
+                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-black text-white uppercase tracking-tighter leading-none italic">
+                            Specialized <br /> 
+                            <span className="text-orange-500">Services.</span>
+                        </h2>
+                    </div>
+                    <p className="text-gray-500 max-w-sm text-sm font-medium leading-relaxed uppercase tracking-wider opacity-80">
+                        Turning your vision into reality with high-end design and development solutions.
                     </p>
                 </div>
-            </div>
 
-            <div className='flex gap-y-6 flex-wrap -mx-3'>
-                {/* HTML */}
-                <div className='md:w-1/3 sm:w-1/2 w-full px-3' data-aos="fade-up" data-aos-duration="1000">
-                    <div className="p-4 md:p-6 bg-stone-200 dark:bg-orange-500/70 rounded-2xl h-full transition-all duration-300 hover:bg-orange-500 hover:text-white dark:hover:text-black tracking-wide text-gray-900 dark:text-white">
-                        <div className="md:mb-8 mb-5 flex items-center gap-x-4 md:gap-x-8">
-                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                <img src={html5} alt="HTML" className="w-8 h-8 object-cover" />
-                            </div>
-                            <strong className="text-lg sm:text-xl md:text-2xl font-semibold">HTML</strong>
-                        </div>
-                        <p>
-                            HTML5 is the latest standard for structuring web content. It introduces semantic elements, multimedia support, and enhanced forms. HTML5 improves performance, accessibility, and compatibility across devices without relying on outdated plugins like Flash, ensuring a better user experience.
-                        </p>
-                    </div>
-                </div>
+                {/* Services Carousel / Grid Wrapper */}
+                <div className="relative">
+                    <Swiper
+                        modules={[Pagination, Autoplay]}
+                        spaceBetween={24}
+                        slidesPerView={1}
+                        pagination={{ clickable: true, dynamicBullets: true }}
+                        autoplay={{ delay: 4000, disableOnInteraction: false }}
+                        breakpoints={{
+                            768: { slidesPerView: 2, spaceBetween: 30 },
+                            1024: { slidesPerView: 3, spaceBetween: 30 },
+                        }}
+                        className="services-swiper !pb-16"
+                    >
+                        {services.map((service, index) => (
+                            <SwiperSlide key={index} className="h-auto">
+                                <div className="group relative bg-neutral-900/40 border border-white/5 p-4 sm:p-8 rounded-[2.5rem] hover:bg-neutral-900/80 transition-all duration-500 h-full flex flex-col overflow-hidden">
+                                    
+                                    {/* Decorative Corner Glow */}
+                                    <div className="absolute -top-12 -right-12 w-24 h-24 bg-orange-500/10 blur-2xl rounded-full group-hover:bg-orange-500/20 transition-all"></div>
 
-                {/* CSS */}
-                <div className='md:w-1/3 sm:w-1/2 w-full px-3' data-aos="fade-right" data-aos-duration="1000">
-                    <div className="p-4 md:p-6 bg-stone-200 dark:bg-orange-500/70 rounded-2xl h-full hover:bg-orange-500 hover:text-white dark:hover:bg-orange-600 dark:hover:text-black transition-all duration-300 tracking-wide text-gray-900 dark:text-white">
-                        <div className="md:mb-8 mb-5 flex items-center gap-x-4 md:gap-x-8">
-                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                <img src={css3} alt="CSS" className="w-8 h-8 object-cover" />
-                            </div>
-                            <strong className="text-lg sm:text-xl md:text-2xl font-semibold">CSS</strong>
-                        </div>
-                        <p>
-                            CSS3 brings powerful styling capabilities to the web. With features like animations, transitions, flexbox, and grid, it helps developers create responsive, modern designs. CSS3 allows for consistent visuals across devices while reducing the need for additional layout frameworks or libraries.
-                        </p>
-                    </div>
-                </div>
+                                    <div className="relative z-10 flex flex-col h-full">
+                                        {/* Icon */}
+                                        <div className="w-20 h-20 bg-orange-500/10 rounded-2xl flex items-center justify-center text-orange-500 mb-8 group-hover:bg-orange-500 group-hover:text-white transition-all duration-500 transform group-hover:rotate-[10deg] shadow-2xl shadow-orange-500/5">
+                                            {service.icon}
+                                        </div>
+                                        
+                                        {/* Title */}
+                                        <h3 className="text-2xl font-black text-white mb-4 group-hover:text-orange-500 transition-colors uppercase italic tracking-tight">
+                                            {service.title}
+                                        </h3>
+                                        
+                                        {/* Description */}
+                                        <p className="text-gray-400 mb-8 text-sm leading-relaxed flex-grow font-medium">
+                                            {service.description}
+                                        </p>
 
-                {/* JavaScript */}
-                <div className='md:w-1/3 sm:w-1/2 w-full px-3' data-aos="fade-left" data-aos-duration="1000">
-                    <div className="p-4 md:p-6 bg-stone-200 dark:bg-orange-500/70 rounded-2xl h-full hover:bg-orange-500 hover:text-white dark:hover:bg-orange-600 dark:hover:text-black transition-all duration-300 tracking-wide text-gray-900 dark:text-white">
-                        <div className="md:mb-8 mb-5 flex items-center gap-x-4 md:gap-x-8">
-                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                <img src={js} alt="JavaScript" className="w-8 h-8 object-cover" />
-                            </div>
-                            <strong className="text-lg sm:text-xl md:text-2xl font-semibold">JavaScript</strong>
-                        </div>
-                        <p>
-                            JavaScript is a scripting language for building interactive web experiences. It powers features like form validation, animations, and real-time updates. JavaScript runs in the browser and is essential for building responsive, dynamic websites and full-featured applications using various frameworks.
-                        </p>
-                    </div>
-                </div>
+                                        {/* Learn More Link */}
+                                        <div className="absolute -bottom-0 flex items-center gap-2 text-orange-500 font-bold text-xs uppercase tracking-[0.2em] opacity-0 group-hover:opacity-100 transition-all duration-500 translate-y-4 group-hover:translate-y-0 cursor-pointer">
+                                            <span>Learn More</span>
+                                            <ArrowRight className="w-4 h-4" />
+                                        </div>
+                                    </div>
 
-                {/* React */}
-                <div className='md:w-1/3 sm:w-1/2 w-full px-3' data-aos="zoom-in" data-aos-duration="1000">
-                    <div className="p-4 md:p-6 bg-stone-200 dark:bg-orange-500/70 rounded-2xl h-full hover:bg-orange-500 hover:text-white dark:hover:bg-orange-600 dark:hover:text-black transition-all duration-300 tracking-wide text-gray-900 dark:text-white">
-                        <div className="md:mb-8 mb-5 flex items-center gap-x-4 md:gap-x-8">
-                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                <img src={react} alt="React" className="w-8 h-8 object-cover" />
-                            </div>
-                            <strong className="text-lg sm:text-xl md:text-2xl font-semibold">React</strong>
-                        </div>
-                        <p>
-                            React is a JavaScript library used to build user interfaces. It features a component-based structure and uses a virtual DOM for efficient updates. React is ideal for creating fast, scalable front-end applications, including web and mobile platforms like React Native.
-                        </p>
-                    </div>
-                </div>
-
-                {/* Tailwind CSS */}
-                <div className='md:w-1/3 sm:w-1/2 w-full px-3' data-aos="flip-left" data-aos-duration="1000">
-                    <div className="p-4 md:p-6 bg-stone-200 dark:bg-orange-500/70 rounded-2xl h-full hover:bg-orange-500 hover:text-white dark:hover:bg-orange-600 dark:hover:text-black transition-all duration-300 tracking-wide text-gray-900 dark:text-white">
-                        <div className="md:mb-8 mb-5 flex items-center gap-x-4 md:gap-x-8">
-                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                <img src={tailwind} alt="Tailwind CSS" className="w-8 h-8 object-cover" />
-                            </div>
-                            <strong className="text-lg sm:text-xl md:text-2xl font-semibold">Tailwind CSS</strong>
-                        </div>
-                        <p>
-                            Tailwind CSS is a utility-first framework for rapidly building modern, responsive designs. It provides low-level utility classes directly in HTML. This allows developers to create clean layouts quickly without writing custom CSS, promoting consistency and maintainability across entire projects.
-                        </p>
-                    </div>
-                </div>
-
-                {/* Figma */}
-                <div className='md:w-1/3 sm:w-1/2 w-full px-3' data-aos="flip-right" data-aos-duration="1000">
-                    <div className="p-4 md:p-6 bg-stone-200 dark:bg-orange-500/70 rounded-2xl h-full hover:bg-orange-500 hover:text-white dark:hover:bg-orange-600 dark:hover:text-black transition-all duration-300 tracking-wide text-gray-900 dark:text-white">
-                        <div className="md:mb-8 mb-5 flex items-center gap-x-4 md:gap-x-8">
-                            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                <img src={figma} alt="Figma" className="w-8 h-8 object-cover" />
-                            </div>
-                            <strong className="text-lg sm:text-xl md:text-2xl font-semibold">Figma</strong>
-                        </div>
-                        <p>
-                            Figma is a collaborative UI design tool used by teams to create wireframes, prototypes, and design systems. It supports real-time editing, feedback, and versioning in the browser. Figma simplifies collaboration between designers and developers, especially for remote or agile teams.
-                        </p>
-                    </div>
+                                    {/* Bottom Border Animation */}
+                                    <div className="absolute bottom-0 left-0 w-0 h-1.5 bg-orange-500 group-hover:w-full transition-all duration-700"></div>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
             </div>
-        </div>
-    )
-}
+
+            {/* Custom Swiper Styles */}
+            <style>{`
+                .services-swiper .swiper-pagination-bullet {
+                    background: rgba(255,255,255,0.1) !important;
+                    width: 8px;
+                    height: 8px;
+                    opacity: 1;
+                }
+                .services-swiper .swiper-pagination-bullet-active {
+                    background: #f97316 !important;
+                    width: 30px;
+                    border-radius: 4px;
+                }
+            `}</style>
+        </section>
+    );
+};

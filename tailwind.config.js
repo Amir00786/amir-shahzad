@@ -8,6 +8,7 @@ module.exports = {
         spinReverse: "spinReverse 6s linear infinite",
         spinScale: "spinScale 6s ease-in-out infinite",
         spin3d: "spin3d 6s linear infinite",
+        gradient: "gradient 3s ease infinite",
       },
       keyframes: {
         fadeIn: {
@@ -30,6 +31,10 @@ module.exports = {
         spin3d: {
           "0%": { transform: "rotateY(0deg)" },
           "100%": { transform: "rotateY(360deg)" },
+        },
+        gradient: {
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
         },
       },
     },

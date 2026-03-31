@@ -68,7 +68,7 @@ export const Header = () => {
                 </div>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden lg:flex items-center bg-neutral-100/50 dark:bg-white/5 px-6 py-2 rounded-full border border-white/10 backdrop-blur-sm">
+                <nav className="hidden lg:flex items-center bg-white/5 px-6 py-2 rounded-full border border-white/10 backdrop-blur-sm">
                     <ul className="flex items-center gap-x-8">
                         {navLinks.map((link) => (
                             <li key={link.name} className="relative group">

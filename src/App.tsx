@@ -31,7 +31,6 @@ function App() {
     <div className='relative overflow-hidden'>
       <div className='bg-zinc-300 dark:bg-neutral-900 text-gray-900 dark:text-white min-h-screen transition-colors duration-300'>
         <Header />
-        
         <div className='mx-auto max-w-[1440px]'>
           <section id="home">
             <Banner />

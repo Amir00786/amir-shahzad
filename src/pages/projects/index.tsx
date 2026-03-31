@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
-// import 'swiper/css';
-// import 'swiper/css/pagination';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 // Baki imports same rahain gay...
 import yelling1 from "../../assets/yelling-1.png"

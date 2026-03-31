@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { useTheme } from "../../context/ThemeContext";
+// import { useTheme } from "../../context/ThemeContext";
 import { motion, AnimatePresence } from "framer-motion"; // Highly recommended for professional feel
 
 export const Header = () => {
@@ -7,7 +7,7 @@ export const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const [activeSection, setActiveSection] = useState("home");
     const menuRef = useRef<HTMLDivElement | null>(null);
-    const { theme, toggleTheme } = useTheme();
+    // const { theme, toggleTheme } = useTheme();
 
     const navLinks = [
         { name: "Home", href: "#home" },

@@ -1,4 +1,4 @@
-import { Instagram, Linkedin, Github, Mail, Phone, ArrowUpRight } from "lucide-react"
+import { Instagram, Linkedin, Github, Mail, Phone } from "lucide-react"
 
 export const Footer = () => {
     const navLinks = [

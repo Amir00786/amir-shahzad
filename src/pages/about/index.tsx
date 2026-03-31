@@ -1,4 +1,3 @@
-import { useState } from "react";
 import profile from "../../assets/profile.png";
 
 export const About = () => {

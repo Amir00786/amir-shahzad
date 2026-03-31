@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Send, Loader2, MessageSquare } from "lucide-react"
+import { Mail, MapPin, Phone, Send, Loader2 } from "lucide-react"
 import { useState } from "react"
 import { useToast } from "../../components/ui/use-toast"
 

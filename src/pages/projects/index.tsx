@@ -11,7 +11,7 @@ import blog5 from "../../assets/blog-5.jpg"
 import { Button } from "../../components/ui/button"
 import { Eye, ExternalLink } from "lucide-react"
 
-const ProjectCard = ({ title, description, image, link, tags, duration }: any) => (
+const ProjectCard = ({ title, description, image, link, tags }: any) => (
     <div 
         className='group relative bg-neutral-900/40 border border-white/5 rounded-[2rem] p-5 hover:border-orange-500/30 transition-all duration-500 h-full flex flex-col'
     >

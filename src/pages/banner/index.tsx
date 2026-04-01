@@ -165,7 +165,7 @@ export const Banner = () => {
 
                             <div className="absolute bottom-6 left-6 right-6 bg-black/60 backdrop-blur-xl border border-white/10 p-5 rounded-[2rem] flex items-center justify-between transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                                 <div>
-                                    <p className="text-orange-500 font-black text-xs italic tracking-widest uppercase leading-none mb-1">Senior Fronend Dev</p>
+                                    <p className="text-orange-500 font-black text-xs italic tracking-widest uppercase leading-none mb-1">Senior Frontend Dev</p>
                                     <p className="text-white text-[11px] font-bold uppercase tracking-tighter opacity-80">Based in Pakistan</p>
                                 </div>
                                 <div className="w-12 h-12 bg-orange-500 rounded-2xl flex items-center justify-center shadow-xl shadow-orange-500/40 rotate-3 group-hover:rotate-0 transition-transform">

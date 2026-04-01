@@ -73,7 +73,7 @@ export const Contact = () => {
 
                     {/* Right: Modern Form */}
                     <div className="relative" data-aos="fade-left">
-                        <div className="bg-neutral-900/50 border border-white/5 p-4 sm:p-8 md:p-12 rounded-[2.5rem] backdrop-blur-sm relative z-10">
+                        <div className="bg-neutral-900/50 border border-white/5 p-4 sm:p-8 rounded-2xl backdrop-blur-sm relative z-10">
                             <form onSubmit={handleSubmit} className="space-y-5">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                     <FormInput label="First Name" name="firstName" value={formData.firstName} onChange={handleChange} required />
@@ -137,7 +137,7 @@ const FormInput = ({ label, ...props }: any) => (
         <label className="text-xs uppercase tracking-widest text-gray-500 font-bold ml-1">{label}</label>
         <input
             {...props}
-            className="w-full bg-black/50 border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-orange-500/50 transition-all"
+            className="w-full bg-black/50 border border-white/10 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-orange-500/50 transition-all"
         />
     </div>
 )

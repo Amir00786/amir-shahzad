@@ -9,9 +9,9 @@ import blog5 from "../../assets/blog-5.jpg"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../../components/ui/carousel"
 
 const ProjectCard = ({ title, description, image, link, tags }: any) => (
-    <div className='group relative bg-neutral-900/40 border border-white/5 rounded-[2.5rem] p-5 hover:border-orange-500/30 transition-all duration-500 h-full flex flex-col overflow-hidden'>
+    <div className='group relative bg-neutral-900/40 border border-white/5 rounded-2xl p-5 hover:border-orange-500/30 transition-all duration-500 h-full flex flex-col overflow-hidden'>
         {/* Project Image Container */}
-        <div className='relative w-full h-48 md:h-56 bg-neutral-800 rounded-[1.5rem] overflow-hidden mb-6'>
+        <div className='relative w-full h-48 md:h-56 bg-neutral-800 rounded-2xl overflow-hidden mb-6'>
             <img
                 src={image}
                 alt={title}
@@ -36,7 +36,7 @@ const ProjectCard = ({ title, description, image, link, tags }: any) => (
                     </span>
                 ))}
             </div>
-            
+
             <div className='flex flex-col gap-2'>
                 <h3 className='text-xl md:text-2xl font-black text-white group-hover:text-orange-500 transition-colors uppercase italic tracking-tighter'>
                     {title}
@@ -96,14 +96,14 @@ export const Projects = () => {
     ];
 
     return (
-        <section className='py-24 bg-[#0a0a0a] relative overflow-hidden' id="projects">
+        <section className='md:py-24 sm:py-16 py-10 bg-[#0a0a0a] relative overflow-hidden' id="projects">
             <div className="max-w-[1440px] mx-auto px-6 w-full">
-                
+
                 {/* Header Section */}
-                <div className="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-6">
-                    <div className="max-w-2xl">
+                <div className="mb-8 sm:mb-12 md:mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
+                    <div className="text-center">
                         <span className="text-orange-500 font-mono tracking-[0.3em] uppercase text-xs mb-4 block">Portfolio</span>
-                        <h2 className="text-5xl md:text-8xl font-black text-white uppercase italic tracking-tighter leading-[0.8]">
+                        <h2 className="text-4xl sm:text-5xl md:text-7xl font-black text-white uppercase italic tracking-tighter">
                             Selected <br />
                             <span className="text-orange-500">Works.</span>
                         </h2>
@@ -124,7 +124,7 @@ export const Projects = () => {
                                 <ProjectCard {...project} />
                             </CarouselItem>
                         ))}
-                        
+
                         {/* Coming Soon Slide */}
                         <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
                             <div className="border-2 border-dashed border-white/5 rounded-[2.5rem] flex flex-col items-center justify-center p-12 text-center h-full min-h-[450px] group hover:border-orange-500/30 transition-all duration-500 bg-neutral-900/20">
@@ -138,9 +138,9 @@ export const Projects = () => {
                     </CarouselContent>
 
                     {/* Navigation buttons - Styled to match your theme */}
-                    <div className="flex justify-start gap-4 mt-12">
-                        <CarouselPrevious className="static translate-y-0 h-12 w-12 bg-transparent border-white/10 text-white hover:bg-orange-500 hover:border-orange-500 transition-all" />
-                        <CarouselNext className="static translate-y-0 h-12 w-12 bg-transparent border-white/10 text-white hover:bg-orange-500 hover:border-orange-500 transition-all" />
+                    <div className="flex justify-center gap-4 mt-8 sm:mt-12 lg:mt-16">
+                        <CarouselPrevious className="static translate-y-0 w-12 h-12 border-orange-500/30 bg-neutral-900 text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300" />
+                        <CarouselNext className="static translate-y-0 w-12 h-12 border-orange-500/30 bg-neutral-900 text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300" />
                     </div>
                 </Carousel>
             </div>

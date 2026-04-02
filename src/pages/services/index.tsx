@@ -3,9 +3,9 @@ import { Monitor, Layout, Smartphone, Code, Cpu, ArrowRight } from "lucide-react
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../../components/ui/carousel"
 
 export const Services = () => {
-//   const plugin = React.useRef(
-//     Autoplay({ delay: 4000, stopOnInteraction: false })
-//   )
+  //   const plugin = React.useRef(
+  //     Autoplay({ delay: 4000, stopOnInteraction: false })
+  //   )
 
   const services = [
     { title: "Web Design", icon: <Monitor className="w-10 h-10" />, description: "Creating visually stunning and modern website layouts." },
@@ -16,19 +16,19 @@ export const Services = () => {
   ]
 
   return (
-    <section className="py-24 bg-[#0a0a0a] relative overflow-hidden" id="services">
-      <div className="max-w-[1440px] mx-auto px-12 w-full">
-        
+    <section className="md:py-24 sm:py-16 py-10 bg-[#0a0a0a] relative overflow-hidden" id="services">
+      <div className="max-w-[1440px] mx-auto px-4 w-full">
+
         {/* Header */}
-        <div className="mb-16">
+        <div className="mb-8 sm:mb-12 md:mb-16 text-center">
           <span className="text-orange-500 font-mono tracking-[0.3em] uppercase text-xs mb-4 block">My Offerings</span>
-          <h2 className="text-5xl md:text-7xl font-black text-white uppercase italic tracking-tighter">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-black text-white uppercase italic tracking-tighter">
             Specialized <span className="text-orange-500">Services.</span>
           </h2>
         </div>
 
         <Carousel
-        //   plugins={[plugin.current]}
+          //   plugins={[plugin.current]}
           className="w-full"
           opts={{
             align: "start",
@@ -38,7 +38,7 @@ export const Services = () => {
           <CarouselContent className="-ml-4">
             {services.map((service, index) => (
               <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                <div className="group relative bg-neutral-900/40 border border-white/5 p-4 sm:p-8 rounded-[2.5rem] hover:bg-neutral-900/80 transition-all duration-500 h-full flex flex-col overflow-hidden">
+                <div className="group relative bg-neutral-900/40 border border-white/5 p-4 sm:p-8 rounded-2xl hover:bg-neutral-900/80 transition-all duration-500 h-full flex flex-col overflow-hidden">
                   <div className="absolute -top-12 -right-12 w-24 h-24 bg-orange-500/10 blur-2xl rounded-full group-hover:bg-orange-500/20 transition-all"></div>
                   <div className="mb-8">
                     <div className="w-16 h-16 bg-orange-500/10 rounded-2xl flex items-center justify-center text-orange-500 mb-6 group-hover:bg-orange-500 group-hover:text-white transition-all duration-500">
@@ -65,9 +65,9 @@ export const Services = () => {
           </CarouselContent>
 
           {/* Navigation Buttons (Styled for your theme) */}
-          <div className="flex justify-end gap-12 mt-8 relative">
-            <CarouselPrevious className="static translate-y-0 bg-transparent border-white/10 text-white hover:bg-orange-500 hover:border-orange-500" />
-            <CarouselNext className="static translate-y-0 bg-transparent border-white/10 text-white hover:bg-orange-500 hover:border-orange-500" />
+          <div className="flex justify-center gap-4 mt-8 sm:mt-12 lg:mt-16">
+            <CarouselPrevious className="static translate-y-0 w-12 h-12 border-orange-500/30 bg-neutral-900 text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300" />
+            <CarouselNext className="static translate-y-0 w-12 h-12 border-orange-500/30 bg-neutral-900 text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300" />
           </div>
         </Carousel>
       </div>

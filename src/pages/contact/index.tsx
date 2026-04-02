@@ -47,20 +47,22 @@ export const Contact = () => {
     }
 
     return (
-        <section className="py-24 bg-[#0a0a0a] relative overflow-hidden" id="contact">
+        <section className="md:py-24 sm:py-16 py-10 bg-[#0a0a0a] relative overflow-hidden" id="contact">
             {/* Background Accent */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-500/5 blur-[120px] rounded-full -z-10"></div>
-            
+
             <div className="max-w-[1440px] mx-auto px-6 w-full">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                    
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
                     {/* Left: Content & Info */}
-                    <div data-aos="fade-right">
-                        <span className="text-orange-500 font-mono tracking-[0.3em] uppercase text-xs mb-4 block">Get In Touch</span>
-                        <h2 className="text-5xl md:text-7xl font-black text-white uppercase tracking-tighter leading-none mb-8">
-                            Let's Work <br /> <span className="text-orange-500">Together.</span>
-                        </h2>
-                        <p className="text-gray-400 text-lg max-w-md mb-12">
+                    <div data-aos="fade-right" className="t">
+                        <div className="text-center">
+                            <span className="text-orange-500 font-mono tracking-[0.3em] uppercase text-xs mb-4 block">Get In Touch</span>
+                            <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter mb-8">
+                                Let's Work <br /> <span className="text-orange-500">Together.</span>
+                            </h2>
+                        </div>
+                        <p className="text-gray-400 text-lg w-full md:max-w-md mb-12">
                             Have a project in mind? Looking for a senior developer to join your team? Or just want to say hi? I'm always open to discussing new opportunities.
                         </p>
 
@@ -81,7 +83,7 @@ export const Contact = () => {
                                 </div>
                                 <FormInput label="Email Address" type="email" name="email" value={formData.email} onChange={handleChange} required />
                                 <FormInput label="Phone Number" name="phone" value={formData.phone} onChange={handleChange} />
-                                
+
                                 <div className="space-y-2">
                                     <label className="text-xs uppercase tracking-widest text-gray-500 font-bold ml-1">Your Message</label>
                                     <textarea
@@ -109,7 +111,7 @@ export const Contact = () => {
                                 </button>
                             </form>
                         </div>
-                        
+
                         {/* Decorative Element */}
                         <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-orange-500/10 rounded-full blur-3xl -z-10"></div>
                     </div>

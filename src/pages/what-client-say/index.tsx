@@ -34,11 +34,11 @@ export const WhatClientSay = () => {
     ];
 
     return (
-        <section className="py-24 bg-[#0a0a0a] relative overflow-hidden" id="testimonials">
+        <section className="md:py-24 sm:py-16 py-10 bg-[#0a0a0a] relative overflow-hidden" id="testimonials">
             <div className="max-w-[1440px] mx-auto px-6 w-full">
                 
                 {/* Header */}
-                <div className="text-center mb-20" data-aos="fade-up">
+                <div className="text-center mb-8 sm:mb-12 md:mb-16" data-aos="fade-up">
                     <span className="text-orange-500 font-mono tracking-[0.4em] uppercase text-xs mb-3 block">Testimonials</span>
                     <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter">
                         Client <span className="text-orange-500">Feedback.</span>
@@ -63,7 +63,7 @@ export const WhatClientSay = () => {
                         </CarouselContent>
                         
                         {/* Custom Positioned Controls */}
-                        <div className="flex justify-center gap-4 mt-12 lg:mt-16">
+                        <div className="flex justify-center gap-4 mt-8 sm:mt-12 lg:mt-16">
                             <CarouselPrevious className="static translate-y-0 w-12 h-12 border-orange-500/30 bg-neutral-900 text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300" />
                             <CarouselNext className="static translate-y-0 w-12 h-12 border-orange-500/30 bg-neutral-900 text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300" />
                         </div>
@@ -75,7 +75,7 @@ export const WhatClientSay = () => {
 }
 
 const TestimonialCard = ({ image, quote, author, role }: { image: string, quote: string, author: string, role: string }) => (
-    <div className="group relative bg-neutral-900/50 border border-white/5 rounded-[2.5rem] p-4 md:p-8 lg:p-10 h-full hover:bg-neutral-900 transition-all duration-500 hover:border-orange-500/20">
+    <div className="group relative bg-neutral-900/50 border border-white/5 rounded-2xl p-4 md:p-8 lg:p-10 h-full hover:bg-neutral-900 transition-all duration-500 hover:border-orange-500/20">
         
         {/* Glow Effect */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-orange-500/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -99,7 +99,7 @@ const TestimonialCard = ({ image, quote, author, role }: { image: string, quote:
             </div>
 
             {/* Quote Body */}
-            <p className="text-gray-400 text-base leading-relaxed italic mb-8 flex-grow">
+            <p className="text-gray-400 text-base leading-relaxed italic flex-grow">
                 "{quote}"
             </p>
 

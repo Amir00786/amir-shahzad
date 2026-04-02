@@ -40,9 +40,9 @@ export const Skills = () => {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <div className="absolute -top-12 right-16 flex row-reverse gap-x-4">
-                    <CarouselNext className="bg-transparent w-10 h-10 border-orange-500 border-2 cursor-pointer [&>svg]:text-orange-500 hover:[&>svg]:text-white hover:bg-orange-500/70" />
-                    <CarouselPrevious className="bg-transparent w-10 h-10 border-orange-500 border-2 [&>svg]:text-orange-500 hover:[&>svg]:text-white hover:bg-orange-500/70 cursor-pointer" />
+                <div className="flex justify-center gap-4 mt-8 sm:mt-12 lg:mt-16">
+                    <CarouselPrevious className="static translate-y-0 w-12 h-12 border-orange-500/30 bg-neutral-900 text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300" />
+                    <CarouselNext className="static translate-y-0 w-12 h-12 border-orange-500/30 bg-neutral-900 text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300" />
                 </div>
             </Carousel>
         </div>

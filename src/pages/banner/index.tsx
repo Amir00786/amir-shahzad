@@ -90,7 +90,7 @@ export const Banner = () => {
                             <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4">
 
                                 {/* LinkedIn */}
-                                <a href="#" className="relative flex items-center justify-center h-20 w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
+                                <a href="#" className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
                                     <div className="absolute inset-0 bg-[#0077B5] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
                                     <svg
                                         viewBox="0 0 24 24"
@@ -102,7 +102,7 @@ export const Banner = () => {
                                 </a>
 
                                 {/* GitHub */}
-                                <a href="#" className="relative flex items-center justify-center h-20 w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
+                                <a href="#" className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
                                     {/* Animated Background Layer */}
                                     <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
                                     <svg
@@ -118,7 +118,7 @@ export const Banner = () => {
                                 </a>
 
                                 {/* Fiverr */}
-                                <a href="#" className="relative flex items-center justify-center h-20 w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
+                                <a href="#" className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
                                     {/* Animated Background Layer */}
                                     <div className="absolute inset-0 bg-[#1dbf73] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
 
@@ -137,7 +137,7 @@ export const Banner = () => {
                                 </a>
 
                                 {/* Upwork */}
-                                <a href="#" className="relative flex items-center justify-center h-20 w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
+                                <a href="#" className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
                                     <div className="absolute inset-0 bg-[#3b8132] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
                                     <svg
                                         viewBox="0 0 32 32"

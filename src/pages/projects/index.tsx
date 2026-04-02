@@ -126,7 +126,7 @@ export const Projects = () => {
                         ))}
 
                         {/* Coming Soon Slide */}
-                        <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
+                        {/* <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
                             <div className="border-2 border-dashed border-white/5 rounded-[2.5rem] flex flex-col items-center justify-center p-12 text-center h-full min-h-[450px] group hover:border-orange-500/30 transition-all duration-500 bg-neutral-900/20">
                                 <div className="w-20 h-20 rounded-2xl bg-neutral-900 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-orange-500 transition-all duration-500 border border-white/5 group-hover:border-orange-500">
                                     <Plus className="w-8 h-8 text-orange-500 group-hover:text-white transition-colors" />
@@ -134,7 +134,7 @@ export const Projects = () => {
                                 <h3 className="text-white font-black text-2xl uppercase tracking-tighter italic">Next Project</h3>
                                 <p className="text-gray-500 text-[10px] mt-3 uppercase tracking-[0.3em] font-bold opacity-50">Innovation in progress</p>
                             </div>
-                        </CarouselItem>
+                        </CarouselItem> */}
                     </CarouselContent>
 
                     {/* Navigation buttons - Styled to match your theme */}

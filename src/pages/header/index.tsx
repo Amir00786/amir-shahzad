@@ -163,7 +163,7 @@ export const Header = () => {
                             ))}
                         </ul>
 
-                        <div className="mt-auto">
+                        <div className="mt-8">
                             <a
                                 href="#contact"
                                 className="block w-full text-center bg-orange-500 text-white py-4 rounded-xl font-bold shadow-lg shadow-orange-500/20 active:scale-95 transition-transform"

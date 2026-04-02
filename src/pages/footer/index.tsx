@@ -16,7 +16,7 @@ export const Footer = () => {
     ];
 
     return (
-        <footer className="py-16 bg-[#050505] border-t border-white/5 relative overflow-hidden">
+        <footer className="py-8 sm:py-16 bg-[#050505] border-t border-white/5 relative overflow-hidden">
             {/* Background Decoration */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-orange-500/5 blur-[120px] rounded-full -z-10"></div>
 
@@ -24,7 +24,7 @@ export const Footer = () => {
                 <div className="flex flex-col items-center">
                     
                     {/* Brand Logo - High Impact */}
-                    <div className="mb-10 text-center">
+                    <div className="mb-8 sm:mb-10 text-center">
                         <h2 className="text-3xl md:text-4xl font-black tracking-tighter text-white mb-2">
                             AMIR <span className="text-orange-500">SHAHZAD</span>
                         </h2>
@@ -32,7 +32,7 @@ export const Footer = () => {
                     </div>
 
                     {/* Navigation - Minimalist */}
-                    <nav className="mb-12">
+                    <nav className="mb-8 sm:mb-12">
                         <ul className="flex flex-wrap justify-center items-center gap-x-10 gap-y-4">
                             {navLinks.map((link) => (
                                 <li key={link.name}>

@@ -1,5 +1,5 @@
 import { Button } from "../../components/ui/button"
-import { Eye, ExternalLink, Plus } from "lucide-react"
+import { Eye, ExternalLink } from "lucide-react"
 
 // Asset Imports
 import yelling1 from "../../assets/yelling-1.png"

@@ -90,7 +90,7 @@ export const Banner = () => {
                             <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4">
 
                                 {/* LinkedIn */}
-                                <a href="#" className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
+                                <a href="https://www.linkedin.com/in/amir-shahzad-222776249/" className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
                                     <div className="absolute inset-0 bg-[#0077B5] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
                                     <svg
                                         viewBox="0 0 24 24"
@@ -102,7 +102,7 @@ export const Banner = () => {
                                 </a>
 
                                 {/* GitHub */}
-                                <a href="#" className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
+                                <a href="https://github.com/Amir00786" className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
                                     {/* Animated Background Layer */}
                                     <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
                                     <svg
@@ -118,7 +118,9 @@ export const Banner = () => {
                                 </a>
 
                                 {/* Fiverr */}
-                                <a href="#" className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
+                                <a
+                                    href="https://www.fiverr.com/amirshahzad993/be-your-front-end-developer-and-designer?context_referrer=tailored_homepage_perseus&source=recently_viewed_gigs&ref_ctx_id=ac27644f4a6f42169957037c65a711cb&context=recommendation&pckg_id=1&pos=3&context_alg=recently_viewed&seller_online=true&imp_id=c921610a-8f40-411e-a149-d1c73bf79222"
+                                    className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
                                     {/* Animated Background Layer */}
                                     <div className="absolute inset-0 bg-[#1dbf73] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
 
@@ -137,7 +139,7 @@ export const Banner = () => {
                                 </a>
 
                                 {/* Upwork */}
-                                <a href="#" className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
+                                <a href="https://www.upwork.com/freelancers/~01ec5d9c54cf0049ab" className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
                                     <div className="absolute inset-0 bg-[#3b8132] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
                                     <svg
                                         viewBox="0 0 32 32"
@@ -153,19 +155,19 @@ export const Banner = () => {
                                 {/* Resume Button */}
                                 <button
                                     onClick={handleDownload}
-                                    className="text-white text-xs font-black uppercase tracking-[0.2em] italic hover:text-orange-500 transition-all duration-300 flex items-center gap-2 group"
+                                    className="text-white text-sm font-black uppercase tracking-[0.2em] italic hover:text-orange-500 transition-all duration-300 flex items-center gap-2 group"
                                 >
                                     Resume
-                                    <span className="text-orange-500 group-hover:translate-y-1 transition-transform duration-300">↓</span>
+                                    <span className="text-orange-500 text-2xl group-hover:translate-y-1 transition-transform duration-300">↓</span>
                                 </button>
 
                                 {/* Contact/Hire Button */}
                                 <a
                                     href="#contact"
-                                    className="text-white whitespace-nowrap text-xs font-black uppercase tracking-[0.2em] italic hover:text-orange-500 transition-all duration-300 flex items-center gap-2 group"
+                                    className="text-white whitespace-nowrap text-sm font-black uppercase tracking-[0.2em] italic hover:text-orange-500 transition-all duration-300 flex items-center gap-2 group"
                                 >
                                     Hire Me
-                                    <span className="text-orange-500 group-hover:translate-x-1 transition-transform duration-300">→</span>
+                                    <span className="text-orange-500 text-2xl group-hover:translate-x-1 transition-transform duration-300">→</span>
                                 </a>
                             </div>
                         </div>

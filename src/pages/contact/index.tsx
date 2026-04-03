@@ -56,7 +56,7 @@ export const Contact = () => {
 
                     {/* Left: Content & Info */}
                     <div data-aos="fade-right" className="t">
-                        <div className="text-center">
+                        <div className="text-center md:text-left">
                             <span className="text-orange-500 font-mono tracking-[0.3em] uppercase text-xs mb-4 block">Get In Touch</span>
                             <h2 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter mb-8">
                                 Let's Work <br /> <span className="text-orange-500">Together.</span>
@@ -67,9 +67,9 @@ export const Contact = () => {
                         </p>
 
                         <div className="space-y-6 inline-flex flex-col">
-                            <ContactInfo icon={<Mail />} label="Email Me" value="amirshahzadvu91@gmail.com" />
+                            <ContactInfo icon={<Mail />} label="Email" value="amirshahzadvu91@gmail.com" />
                             <ContactInfo icon={<Phone />} label="Call Me" value="+92 307 6358337" />
-                            <ContactInfo icon={<MapPin />} label="Location" value=" Lahore Punjab Pakistan" />
+                            <ContactInfo icon={<MapPin />} label="Location" value="Gujranwala Punjab Pakistan" />
                         </div>
                     </div>
 

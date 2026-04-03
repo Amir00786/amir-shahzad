@@ -1,5 +1,6 @@
 
 export const Footer = () => {
+    
     return (
         <footer className="py-8 sm:py-10 bg-[#050505] border-t border-white/5 relative overflow-hidden">
             {/* Background Decoration */}

@@ -1,13 +1,5 @@
-import { Mail, Phone } from "lucide-react"
 
 export const Footer = () => {
-    const navLinks = [
-        { name: "Home", href: "#home" },
-        { name: "About me", href: "#about" },
-        { name: "Services", href: "#services" },
-        { name: "Projects", href: "#projects" },
-        { name: "Contact me", href: "#contact" },
-    ];
 
     return (
         <footer className="py-8 sm:py-10 bg-[#050505] border-t border-white/5 relative overflow-hidden">

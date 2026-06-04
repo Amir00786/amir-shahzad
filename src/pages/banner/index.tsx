@@ -49,39 +49,39 @@ export const Banner = () => {
     }, [index]);
 
     return (
-        <section className="min-h-screen bg-[#0a0a0a] flex items-center pt-24 pb-12 overflow-hidden" id="home">
+        <section className="min-h-screen bg-slate-50/40 dark:bg-[#050812]/40 backdrop-blur-md flex items-center pt-24 pb-12 overflow-hidden relative" id="home">
             <div className="max-w-[1440px] mx-auto px-6 w-full">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center">
 
                     {/* Left Content */}
                     <div className="space-y-10 relative z-10 text-center lg:text-left" data-aos="fade-right">
-                        <div className="absolute -top-20 -left-20 w-72 h-72 bg-orange-500/10 blur-[120px] -z-10 animate-pulse"></div>
+                        <div className="absolute -top-20 -left-20 w-72 h-72 bg-indigo-500/10 blur-[120px] -z-10 animate-pulse"></div>
 
                         <div className="space-y-6">
-                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/5 border border-orange-500/10">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/5 border border-indigo-500/10">
 
                                 <span className="relative flex h-2 w-2">
-                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
-                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
                                 </span>
 
-                                <span className="text-orange-500 font-mono tracking-widest uppercase text-[10px] font-bold">Available for New Projects</span>
+                                <span className="text-indigo-500 font-mono tracking-widest uppercase text-[10px] font-bold">Available for New Projects</span>
 
                             </div>
 
                             <h2 className="text-gray-400 text-xl md:text-3xl font-bold tracking-tight">
-                                Hello, I'm <span className="text-white">Amir Shahzad</span>
+                                Hello, I'm <span className="text-neutral-900 dark:text-white">Amir Shahzad</span>
                             </h2>
 
-                            <h1 className="text-4xl mb-5 md:text-8xl font-black text-white min-h-20 md:min-h-[240px] leading-[0.9] uppercase italic tracking-tighter">
-                                <span className="text-transparent bg-clip-text bg-gradient-to-br from-white via-white to-orange-500/50">
+                            <h1 className="text-4xl mb-5 md:text-8xl font-black text-neutral-900 dark:text-white min-h-20 md:min-h-[240px] leading-[0.9] uppercase italic tracking-tighter">
+                                <span className="text-transparent bg-clip-text bg-gradient-to-br from-neutral-900 via-neutral-900 to-indigo-500/50 dark:from-white dark:via-white dark:to-indigo-500/50">
                                     {displayText}
                                 </span>
-                                <span className="text-orange-500 animate-pulse">_</span>
+                                <span className="text-indigo-500 animate-pulse">_</span>
                             </h1>
 
                             <p className="text-gray-500 max-w-lg mx-auto lg:mx-0 leading-relaxed text-sm md:text-base font-medium uppercase tracking-wider opacity-80">
-                                High-end digital experiences crafted with precision. Specializing in <span className="text-white">React & Next.js</span>.
+                                High-end digital experiences crafted with precision. Specializing in <span className="text-neutral-900 dark:text-white">React &amp; Next.js</span>.
                             </p>
                         </div>
 
@@ -90,7 +90,7 @@ export const Banner = () => {
                             <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4">
 
                                 {/* LinkedIn */}
-                                <a href="https://www.linkedin.com/in/amir-shahzad-222776249/" className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
+                                <a href="https://www.linkedin.com/in/amir-shahzad-222776249/" className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-black/10 dark:border-white/10 group transition-all duration-300 shadow-sm dark:shadow-none">
                                     <div className="absolute inset-0 bg-[#0077B5] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
                                     <svg
                                         viewBox="0 0 24 24"
@@ -102,7 +102,7 @@ export const Banner = () => {
                                 </a>
 
                                 {/* GitHub */}
-                                <a href="https://github.com/Amir00786" className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
+                                <a href="https://github.com/Amir00786" className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-black/10 dark:border-white/10 group transition-all duration-300 shadow-sm dark:shadow-none">
                                     {/* Animated Background Layer */}
                                     <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
                                     <svg
@@ -120,14 +120,14 @@ export const Banner = () => {
                                 {/* Fiverr */}
                                 <a
                                     href="https://www.fiverr.com/amirshahzad993/be-your-front-end-developer-and-designer?context_referrer=tailored_homepage_perseus&source=recently_viewed_gigs&ref_ctx_id=ac27644f4a6f42169957037c65a711cb&context=recommendation&pckg_id=1&pos=3&context_alg=recently_viewed&seller_online=true&imp_id=c921610a-8f40-411e-a149-d1c73bf79222"
-                                    className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
+                                    className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-black/10 dark:border-white/10 group transition-all duration-300 shadow-sm dark:shadow-none">
                                     {/* Animated Background Layer */}
-                                    <div className="absolute inset-0 bg-[#1dbf73] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
+                                    <div className="absolute inset-0 bg-[#1abc9c] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
 
                                     {/* SVG Icon */}
                                     <svg
                                         viewBox="0 0 192 192"
-                                        className="relative z-10 w-10 h-10 stroke-white fill-none transition-colors duration-500"
+                                        className="relative z-10 w-10 h-10 stroke-neutral-800 dark:stroke-white fill-none transition-colors duration-500"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
                                         <path
@@ -139,8 +139,8 @@ export const Banner = () => {
                                 </a>
 
                                 {/* Upwork */}
-                                <a href="https://www.upwork.com/freelancers/~01ec5d9c54cf0049ab" className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-white/10 group transition-all duration-300">
-                                    <div className="absolute inset-0 bg-[#3b8132] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
+                                <a href="https://www.upwork.com/freelancers/~01ec5d9c54cf0049ab" className="relative flex items-center justify-center h-20 w-full sm:w-20 rounded-xl overflow-hidden border border-black/10 dark:border-white/10 group transition-all duration-300 shadow-sm dark:shadow-none">
+                                    <div className="absolute inset-0 bg-[#2ecc71] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
                                     <svg
                                         viewBox="0 0 32 32"
                                         className="w-10 h-10 fill-[#14a800] relative z-50 group-hover:fill-white transition-colors duration-300"
@@ -155,19 +155,19 @@ export const Banner = () => {
                                 {/* Resume Button */}
                                 <button
                                     onClick={handleDownload}
-                                    className="text-white text-sm font-black uppercase tracking-[0.2em] italic hover:text-orange-500 transition-all duration-300 flex items-center gap-2 group"
+                                    className="text-foreground text-sm font-black uppercase tracking-[0.2em] italic hover:text-indigo-500 transition-all duration-300 flex items-center gap-2 group"
                                 >
                                     Resume
-                                    <span className="text-orange-500 text-2xl group-hover:translate-y-1 transition-transform duration-300">↓</span>
+                                    <span className="text-indigo-500 text-2xl group-hover:translate-y-1 transition-transform duration-300">↓</span>
                                 </button>
 
                                 {/* Contact/Hire Button */}
                                 <a
                                     href="#contact"
-                                    className="text-white whitespace-nowrap text-sm font-black uppercase tracking-[0.2em] italic hover:text-orange-500 transition-all duration-300 flex items-center gap-2 group"
+                                    className="text-foreground whitespace-nowrap text-sm font-black uppercase tracking-[0.2em] italic hover:text-indigo-500 transition-all duration-300 flex items-center gap-2 group"
                                 >
                                     Hire Me
-                                    <span className="text-orange-500 text-2xl group-hover:translate-x-1 transition-transform duration-300">→</span>
+                                    <span className="text-indigo-500 text-2xl group-hover:translate-x-1 transition-transform duration-300">→</span>
                                 </a>
                             </div>
                         </div>
@@ -175,9 +175,9 @@ export const Banner = () => {
 
                     {/* Right Image Section */}
                     <div className="relative flex justify-end items-end" data-aos="zoom-out">
-                        <div className="absolute w-[80%] h-[80%] bg-orange-500/10 blur-[150px] rounded-full"></div>
+                        <div className="absolute w-[80%] h-[80%] bg-indigo-500/10 blur-[150px] rounded-full"></div>
 
-                        <div className="relative w-full max-w-[480px] aspect-[4/5] overflow-hidden rounded-2xl border border-white/5 bg-neutral-900/50 shadow-2xl group">
+                        <div className="relative w-full max-w-[480px] aspect-[4/5] overflow-hidden rounded-2xl border border-black/5 dark:border-white/5 bg-neutral-100 dark:bg-neutral-900/50 shadow-2xl group">
                             <img
                                 src={profile}
                                 alt="Amir Shahzad"
@@ -186,10 +186,10 @@ export const Banner = () => {
 
                             <div className="absolute overflow-hidden bottom-6 left-6 right-6 bg-black/60 backdrop-blur-xl border border-white/10 p-5 rounded-2xl flex items-center justify-between transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                                 <div>
-                                    <p className="text-orange-500 font-black text-xs italic tracking-widest uppercase leading-none mb-1">Senior Frontend Dev</p>
+                                    <p className="text-indigo-400 font-black text-xs italic tracking-widest uppercase leading-none mb-1">Senior Frontend Dev</p>
                                     <p className="text-white text-[11px] font-bold uppercase tracking-tighter opacity-80">Based in Pakistan</p>
                                 </div>
-                                <div className="w-12 h-12 bg-orange-500 rounded-2xl flex items-center justify-center shadow-xl shadow-orange-500/40 rotate-3 group-hover:rotate-0 transition-transform">
+                                <div className="w-12 h-12 bg-indigo-600 rounded-2xl flex items-center justify-center shadow-xl shadow-indigo-600/40 rotate-3 group-hover:rotate-0 transition-transform">
                                     <span className="text-white font-bold text-2xl">⚛</span>
                                 </div>
                             </div>

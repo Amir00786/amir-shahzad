@@ -8,8 +8,10 @@ import { Projects } from './pages/projects'
 import { Services } from './pages/services'
 // import { Skills } from './pages/skills'
 import { WhatClientSay } from './pages/what-client-say'
+import { FindMeOn } from './pages/find-me-on'
 import { Toaster } from './components/ui/toaster'
 import { SplashScreen } from './components/SplashScreen'
+import { WaterBackground } from './components/WaterBackground'
 import { useEffect, useState } from 'react'
 import AOS from 'aos'
 
@@ -29,7 +31,8 @@ function App() {
 
   return (
     <div className='relative overflow-hidden'>
-      <div className='bg-zinc-300 dark:bg-neutral-900 text-gray-900 dark:text-white min-h-screen transition-colors duration-300'>
+      <WaterBackground />
+      <div className='text-foreground min-h-screen transition-colors duration-300 relative z-10'>
         <Header />
         <div>
           <section id="home">
@@ -50,6 +53,7 @@ function App() {
           <section id="testimonials">
             <WhatClientSay />
           </section>
+          <FindMeOn />
           <section id="contact">
             <Contact />
           </section>

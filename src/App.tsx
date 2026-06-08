@@ -14,6 +14,7 @@ import { SplashScreen } from './components/SplashScreen'
 import { WaterBackground } from './components/WaterBackground'
 import { useEffect, useState } from 'react'
 import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function App() {
   const [showSplash, setShowSplash] = useState(true)

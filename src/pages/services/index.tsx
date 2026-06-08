@@ -13,13 +13,13 @@ export const Services = () => {
   return (
     <section className="md:py-24 sm:py-16 py-10 bg-slate-50/40 dark:bg-[#050812]/40 backdrop-blur-md relative overflow-hidden" id="services">
       <div className="max-w-[1440px] mx-auto px-4 w-full">
-        <div className="mb-8 sm:mb-12 md:mb-16 text-center">
+        <div className="mb-8 sm:mb-12 md:mb-16 text-center" data-aos="fade-up">
           <span className="text-teal-500 font-mono tracking-[0.3em] uppercase text-xs mb-4 block">My Offerings</span>
           <h2 className="text-4xl sm:text-5xl md:text-7xl font-black text-foreground uppercase italic tracking-tighter">
             Specialized <span className="text-teal-500">Services.</span>
           </h2>
         </div>
-        <Carousel className="w-full" opts={{ align: "start", loop: true }}>
+        <Carousel className="w-full" opts={{ align: "start", loop: true }} data-aos="fade-up" data-aos-delay="100">
           <CarouselContent className="-ml-4">
             {services.map((service, index) => (
               <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">

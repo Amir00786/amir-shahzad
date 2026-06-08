@@ -50,13 +50,13 @@ export const Projects = () => {
     return (
         <section className='md:py-24 sm:py-16 py-10 bg-zinc-100/50 dark:bg-zinc-900/40 backdrop-blur-md relative overflow-hidden' id="projects">
             <div className="max-w-[1440px] mx-auto px-6 w-full">
-                <div className="text-center mb-8 sm:mb-12 md:mb-16">
+                <div className="text-center mb-8 sm:mb-12 md:mb-16" data-aos="fade-up">
                     <span className="text-indigo-500 font-mono tracking-[0.3em] uppercase text-xs mb-4 block">Portfolio</span>
                     <h2 className="text-4xl sm:text-5xl md:text-7xl font-black text-foreground uppercase italic tracking-tighter">
                         Selected <span className="text-indigo-500"> Works.</span>
                     </h2>
                 </div>
-                <Carousel className="w-full" opts={{ align: "start", loop: true }}>
+                <Carousel className="w-full" opts={{ align: "start", loop: true }} data-aos="fade-up" data-aos-delay="100">
                     <CarouselContent className="-ml-4">
                         {projectList.map((project, index) => (
                             <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">

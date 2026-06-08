@@ -22,7 +22,7 @@ export const WhatClientSay = () => {
                         Client <span className="text-teal-500">Feedback.</span>
                     </h2>
                 </div>
-                <div className="relative">
+                <div className="relative" data-aos="fade-up" data-aos-delay="100">
                     <Carousel className="w-full">
                         <CarouselContent className="-ml-4">
                             {testimonials.map((t, index) => (

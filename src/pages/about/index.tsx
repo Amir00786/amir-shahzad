@@ -237,20 +237,42 @@ export const About = () => {
                         </div>
                     </div>
                     <div className="relative group order-1 md:order-2" data-aos="fade-left">
-                        <div className="space-y-6">
+                        <div className="space-y-5">
+                            {/* Tagline */}
                             <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-foreground leading-tight">
-                                Delivering <span className="text-indigo-500 underline decoration-indigo-500/30 underline-offset-8">High-End</span> Frontend <br /> Solutions with Precision.
+                                Crafting <span className="text-indigo-500 underline decoration-indigo-500/30 underline-offset-8">Scalable</span> Digital Products <br className="hidden sm:block" /> That Drive Real Results.
                             </h3>
-                            <p className="text-gray-400 text-base lg:text-lg leading-relaxed">
-                                I am a passionate software engineer specializing in architectural excellence for the modern web. With a foundation built on <span className="text-foreground border-b border-indigo-500/50">React.js and Next.js</span>, I transform complex business requirements into fluid, high-performance user experiences.
+
+                            {/* Bio paragraphs */}
+                            <p className="text-gray-400 text-sm lg:text-base leading-relaxed">
+                                I'm a <span className="text-foreground font-semibold">Senior Frontend Engineer</span> with 4+ years of professional experience designing and shipping production-grade web applications. My core expertise spans <span className="text-foreground border-b border-indigo-500/50">React.js, Next.js, and TypeScript</span> — enabling me to architect feature-rich, highly maintainable codebases that scale with product growth.
                             </p>
-                            <p className="text-gray-400 text-base lg:text-lg leading-relaxed">
-                                My approach combines a keen eye for UI/UX design with robust technical implementation. Whether it's managing complex state, optimizing performance, or ensuring 100% responsiveness, I strive for pixel-perfect results in every commit.
+                            <p className="text-gray-400 text-sm lg:text-base leading-relaxed">
+                                I collaborate closely with product, design, and backend teams to translate complex requirements into intuitive, pixel-perfect interfaces. From <span className="text-foreground font-semibold">advanced state management</span> and API integration to <span className="text-foreground font-semibold">accessibility compliance</span> and Core Web Vitals optimization — I deliver end-to-end frontend solutions built for performance and longevity.
                             </p>
+                            <p className="text-gray-400 text-sm lg:text-base leading-relaxed">
+                                Whether working independently or within an agile team, I bring strong ownership, clear communication, and a relentless focus on shipping quality software that exceeds user expectations.
+                            </p>
+
+                            {/* Professional Highlights */}
+                            <div className="grid grid-cols-3 gap-4 pt-2">
+                                {[
+                                    { value: "4+", label: "Years Experience" },
+                                    { value: "30+", label: "Projects Delivered" },
+                                    { value: "100%", label: "Client Satisfaction" },
+                                ].map((stat, i) => (
+                                    <div key={i} className="flex flex-col items-center text-center bg-white/60 dark:bg-indigo-500/5 border border-indigo-100 dark:border-indigo-500/10 rounded-xl py-3 px-2">
+                                        <span className="text-xl md:text-2xl font-black text-indigo-500">{stat.value}</span>
+                                        <span className="text-[10px] uppercase font-bold tracking-wider text-gray-400 mt-0.5">{stat.label}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
-                        <div className="grid grid-cols-1 pt-6 gap-6 sm:grid-cols-2">
+
+                        {/* CTA Buttons */}
+                        <div className="grid grid-cols-1 pt-6 gap-4 sm:grid-cols-2">
                             <a href="#contact" className="bg-indigo-600 text-center hover:bg-indigo-700 text-white px-10 py-4 rounded-xl text-sm font-bold shadow-xl shadow-indigo-600/20 transition-all hover:-translate-y-1">Hire Me</a>
-                            <a href="#projects" className="border text-center border-neutral-300 dark:border-neutral-800 hover:border-indigo-500 text-gray-600 dark:text-gray-300 hover:text-indigo-500 px-10 py-4 rounded-xl text-sm font-bold transition-all">Portfolio</a>
+                            <a href="#projects" className="border text-center border-neutral-300 dark:border-neutral-800 hover:border-indigo-500 text-gray-600 dark:text-gray-300 hover:text-indigo-500 px-10 py-4 rounded-xl text-sm font-bold transition-all">View Portfolio</a>
                         </div>
                     </div>
                 </div>
@@ -427,7 +449,7 @@ export const About = () => {
                                                     style={{
                                                         transform: `rotate(${-rotationAngle}deg)`,
                                                         transition: "none",
-                                                     }}
+                                                    }}
                                                 >
                                                     <div className="opacity-80 hover:opacity-100 select-none flex items-center justify-center">
                                                         {skill.logo}

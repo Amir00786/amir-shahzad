@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Download, ArrowRight } from "lucide-react";
 import profile from "../../assets/profile.jpg";
 
 const roles = ["Frontend Developer", "UI/UX Designer", "React Developer", "Freelancer"];
@@ -88,6 +89,25 @@ export const Banner = () => {
                                 <span className="text-indigo-500">2+ years</span> of hands-on experience building
                                 production-grade web apps, I bridge the gap between great design and rock-solid code.
                             </p>
+
+                            {/* CTA Buttons */}
+                            <div className="flex flex-wrap items-center gap-4 justify-center lg:justify-start pt-2">
+                                <button
+                                    onClick={handleDownload}
+                                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-neutral-300 dark:border-white/10 bg-white/60 dark:bg-white/5 text-sm font-semibold text-neutral-700 dark:text-neutral-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-400/50 hover:bg-indigo-50 dark:hover:bg-indigo-500/10 backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5"
+                                >
+                                    <Download className="w-4 h-4" />
+                                    Download CV
+                                </button>
+
+                                <a
+                                    href="#contact"
+                                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 text-white text-sm font-bold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/45 hover:-translate-y-0.5 transition-all duration-300"
+                                >
+                                    Hire Me
+                                    <ArrowRight className="w-4 h-4" />
+                                </a>
+                            </div>
                         </div>
                     </div>
 

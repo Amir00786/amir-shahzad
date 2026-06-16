@@ -48,7 +48,7 @@ export const SplashScreen = ({ onComplete }: SplashScreenProps) => {
       y: 0,
       scale: 1,
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         stiffness: 120,
         damping: 14
       }
@@ -61,7 +61,7 @@ export const SplashScreen = ({ onComplete }: SplashScreenProps) => {
       opacity: 1,
       scale: 1,
       transition: {
-        type: 'spring',
+        type: 'spring' as const,
         stiffness: 220,
         damping: 10,
         delay: 0.7
@@ -76,7 +76,7 @@ export const SplashScreen = ({ onComplete }: SplashScreenProps) => {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: 'easeOut',
+        ease: 'easeOut' as const,
         delay: 0.9
       }
     }
@@ -84,9 +84,8 @@ export const SplashScreen = ({ onComplete }: SplashScreenProps) => {
 
   return (
     <div
-      className={`fixed inset-0 z-[9999] bg-[#030712] flex flex-col items-center justify-center transition-all duration-700 ease-in-out ${
-        isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-110 pointer-events-none'
-      }`}
+      className={`fixed inset-0 z-[9999] bg-[#030712] flex flex-col items-center justify-center transition-all duration-700 ease-in-out ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-110 pointer-events-none'
+        }`}
     >
       {/* Background Pulsating Glows */}
       <motion.div
@@ -101,7 +100,7 @@ export const SplashScreen = ({ onComplete }: SplashScreenProps) => {
         }}
         className="absolute w-[350px] h-[350px] bg-indigo-500/10 rounded-full blur-[100px] -translate-x-12 -translate-y-12"
       />
-      
+
       <motion.div
         animate={{
           scale: [1.1, 0.95, 1.1],
@@ -117,7 +116,7 @@ export const SplashScreen = ({ onComplete }: SplashScreenProps) => {
       />
 
       <div className="relative flex flex-col items-center gap-10">
-        
+
         {/* Animated Initials Logo */}
         <motion.div
           variants={containerVariants}
@@ -159,15 +158,15 @@ export const SplashScreen = ({ onComplete }: SplashScreenProps) => {
               {progress}%
             </span>
           </div>
-          
+
           {/* Progress Bar Container */}
           <div className="w-full h-[3px] bg-white/5 rounded-full overflow-hidden border border-white/5">
-            <div 
+            <div
               className="h-full bg-gradient-to-r from-indigo-500 via-indigo-600 to-teal-500 transition-all duration-300 ease-out shadow-[0_0_12px_rgba(99,102,241,0.6)]"
               style={{ width: `${progress}%` }}
             ></div>
           </div>
-          
+
           <p className="text-gray-500 text-[9px] uppercase tracking-[0.4em] font-semibold mt-2 animate-pulse">
             Crafting Experience
           </p>

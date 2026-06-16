@@ -278,9 +278,9 @@ export const About = () => {
                 </div>
 
                 <div className="bg-indigo-50/50 dark:bg-[#0d0f1a]/60 border border-indigo-100 dark:border-indigo-500/10 p-5 sm:p-10 lg:p-16 rounded-3xl backdrop-blur-sm" data-aos="fade-up">
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <div className="grid grid-cols-2 gap-12 items-center">
                         {/* Title and Detail Card (Left Column) */}
-                        <div className="lg:col-span-5 space-y-6 flex flex-col justify-between h-full">
+                        <div className="space-y-6 flex flex-col justify-between h-full">
                             <div>
                                 <div className="border-l-4 border-indigo-500 pl-6 mb-6">
                                     <h3 className="text-xl md:text-3xl font-black text-foreground uppercase tracking-tighter">
@@ -370,13 +370,13 @@ export const About = () => {
                         </div>
 
                         {/* Interactive Rotating Skill Circle (Right Column) */}
-                        <div className="lg:col-span-7 flex justify-center items-center py-10 relative select-none">
+                        <div className="!w-full flex justify-center items-center py-10 relative select-none">
                             <div
-                                className="relative flex items-center justify-center transition-all duration-300"
-                                style={{
-                                    width: `${radius * 2 + 100}px`,
-                                    height: `${radius * 2 + 100}px`,
-                                }}
+                                className="relative !w-full flex items-center justify-center transition-all duration-300"
+                            // style={{
+                            //     width: `${radius * 2 + 100}px`,
+                            //     height: `${radius * 2 + 100}px`,
+                            // }}
                             >
                                 {/* Central active skill display */}
                                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 flex flex-col items-center justify-center">

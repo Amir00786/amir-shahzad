@@ -11,7 +11,7 @@ import figma from "../../assets/figma.png";
 import api from "../../assets/api.png";
 import redux from "../../assets/redux.png";
 import bootstrapLogo from "../../assets/bootstrap-logo.png";
-import jquery from "../../assets/jquerry.png";
+import jquery from "../../assets/Jquerry.png";
 import nextjs from "../../assets/next-js.png";
 import typescript from "../../assets/typescript.png";
 import zustandLogo from "../../assets/zustand.svg";

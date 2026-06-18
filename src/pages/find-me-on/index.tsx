@@ -3,73 +3,37 @@ import profile from "../../assets/profile.jpg";
 export const FindMeOn = () => {
     const cards = [
         {
-            name: "Facebook",
-            url: "https://www.facebook.com/",
-            gradient: "from-[#2c3e50] to-[#34495e]",
-            shadow: "hover:shadow-[#34495e]/40",
+            name: "Gmail",
+            url: "https://mail.google.com/mail/?view=cm&fs=1&to=amirshahzadvu91@gmail.com",
+            gradient: "from-[#EA4335] to-[#c0392b]",
+            shadow: "hover:shadow-[#EA4335]/40",
             textColor: "text-white",
             rotation: "-rotate-12 lg:-rotate-[22deg]",
             hoverRotation: "hover:-rotate-3 lg:hover:-rotate-22",
             offsetClass: "-translate-x-[90px] translate-y-6 sm:-translate-x-[300px] lg:-translate-x-[420px] lg:translate-y-12",
             hoverOffsetClass: "hover:-translate-y-16 hover:-translate-x-[90px] sm:hover:-translate-x-[300px] lg:hover:-translate-x-[420px]",
             zIndex: "z-10",
-            previewUrl: "facebook.com/amirshahzad",
+            previewUrl: "mail.google.com",
             icon: (
                 <svg
                     viewBox="0 0 24 24"
                     className="w-10 h-10 lg:w-16 lg:h-16 fill-white"
                     xmlns="http://www.w3.org/2000/svg"
                 >
-                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                </svg>
-            ),
-            previewContent: (
-                <div className="flex flex-col h-full justify-between">
-                    <div className="flex items-center gap-1.5">
-                        <span className="text-[#34495e] font-black text-sm">facebook</span>
-                    </div>
-                    <div className="my-1.5">
-                        <p className="font-bold text-slate-800 dark:text-slate-100 text-[10px] leading-tight">Amir Shahzad</p>
-                        <p className="text-[8px] text-slate-400 mt-0.5 leading-tight">Connect on social media.</p>
-                    </div>
-                    <button className="w-full bg-[#34495e] hover:bg-[#2c3e50] text-white text-[8px] font-bold py-1.5 rounded-full transition-colors mt-auto">
-                        Follow
-                    </button>
-                </div>
-            )
-        },
-        {
-            name: "Instagram",
-            url: "https://www.instagram.com/",
-            gradient: "from-[#8e44ad] to-[#9b59b6]",
-            shadow: "hover:shadow-[#9b59b6]/40",
-            textColor: "text-white",
-            rotation: "-rotate-6 lg:-rotate-[14deg]",
-            hoverRotation: "hover:-rotate-2 lg:hover:-rotate-[4deg]",
-            offsetClass: "-translate-x-[60px] translate-y-3 sm:-translate-x-[200px] lg:-translate-x-[280px] lg:translate-y-6",
-            hoverOffsetClass: "hover:-translate-y-16 hover:-translate-x-[60px] sm:hover:-translate-x-[200px] lg:hover:-translate-x-[280px]",
-            zIndex: "z-20",
-            previewUrl: "instagram.com/amir_shahzad",
-            icon: (
-                <svg
-                    viewBox="0 0 24 24"
-                    className="w-10 h-10 lg:w-16 lg:h-16 fill-white"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-1.29 1.454-2.032 2.514-1.202L12 11.33l9.486-7.075c1.06-.83 2.514-.088 2.514 1.202z"/>
                 </svg>
             ),
             previewContent: (
                 <div className="flex flex-col h-full justify-between">
                     <div className="flex items-center justify-between">
-                        <span className="font-bold text-xs bg-gradient-to-r from-[#8e44ad] to-[#9b59b6] bg-clip-text text-transparent">instagram</span>
+                        <span className="text-[#EA4335] font-black text-sm">gmail</span>
                     </div>
                     <div className="my-1.5">
-                        <p className="font-bold text-slate-800 dark:text-slate-100 text-[10px] leading-tight">@amir_shahzad</p>
-                        <p className="text-[8px] text-slate-400 mt-0.5 leading-tight">Creative UI designs & highlights.</p>
+                        <p className="font-bold text-slate-800 dark:text-slate-100 text-[10px] leading-tight">amirshahzadvu91@gmail.com</p>
+                        <p className="text-[8px] text-slate-400 mt-0.5 leading-tight">Send an email directly.</p>
                     </div>
-                    <button className="w-full bg-gradient-to-r from-[#8e44ad] to-[#9b59b6] text-white text-[8px] font-bold py-1.5 rounded-full transition-colors mt-auto">
-                        Follow
+                    <button className="w-full bg-[#EA4335] hover:bg-[#c0392b] text-white text-[8px] font-bold py-1.5 rounded-full transition-colors mt-auto">
+                        Compose Email
                     </button>
                 </div>
             )
@@ -80,11 +44,11 @@ export const FindMeOn = () => {
             gradient: "from-[#2980b9] to-[#3498db]",
             shadow: "hover:shadow-[#3498db]/40",
             textColor: "text-white",
-            rotation: "-rotate-3 lg:-rotate-[6deg]",
-            hoverRotation: "hover:-rotate-1 lg:hover:-rotate-[2deg]",
-            offsetClass: "-translate-x-[30px] translate-y-1 sm:-translate-x-[100px] lg:-translate-x-[140px] lg:translate-y-2",
-            hoverOffsetClass: "hover:-translate-y-16 hover:-translate-x-[30px] sm:hover:-translate-x-[100px] lg:hover:-translate-x-[140px]",
-            zIndex: "z-30",
+            rotation: "-rotate-6 lg:-rotate-[14deg]",
+            hoverRotation: "hover:-rotate-2 lg:hover:-rotate-[4deg]",
+            offsetClass: "-translate-x-[60px] translate-y-3 sm:-translate-x-[200px] lg:-translate-x-[280px] lg:translate-y-6",
+            hoverOffsetClass: "hover:-translate-y-16 hover:-translate-x-[60px] sm:hover:-translate-x-[200px] lg:hover:-translate-x-[280px]",
+            zIndex: "z-20",
             previewUrl: "linkedin.com/in/amir-shahzad-222776249",
             icon: (
                 <svg
@@ -114,99 +78,16 @@ export const FindMeOn = () => {
             )
         },
         {
-            name: "Upwork",
-            url: "https://www.upwork.com/freelancers/~01ec5d9c54cf0049ab",
-            gradient: "from-[#27ae60] to-[#2ecc71]",
-            shadow: "hover:shadow-[#2ecc71]/40",
-            textColor: "text-white",
-            rotation: "rotate-3 lg:rotate-[6deg]",
-            hoverRotation: "hover:rotate-1 lg:hover:rotate-[2deg]",
-            offsetClass: "translate-x-[30px] translate-y-1 sm:translate-x-[100px] lg:translate-x-[140px] lg:translate-y-2",
-            hoverOffsetClass: "hover:-translate-y-16 hover:translate-x-[30px] sm:hover:translate-x-[100px] lg:hover:translate-x-[140px]",
-            zIndex: "z-30",
-            previewUrl: "upwork.com/freelancers/amirshahzad",
-            icon: (
-                <svg
-                    viewBox="0 0 32 32"
-                    className="w-10 h-10 lg:w-16 lg:h-16 fill-white"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path d="M24.75 17.542c-1.469 0-2.849-0.62-4.099-1.635l0.302-1.432 0.010-0.057c0.276-1.521 1.13-4.078 3.786-4.078 1.99 0 3.604 1.615 3.604 3.604 0 1.984-1.615 3.599-3.604 3.599zM24.75 6.693c-3.385 0-6.016 2.198-7.083 5.818-1.625-2.443-2.865-5.38-3.583-7.854h-3.646v9.484c-0.005 1.875-1.521 3.391-3.396 3.396-1.875-0.005-3.391-1.526-3.396-3.396v-9.484h-3.646v9.484c0 3.885 3.161 7.068 7.042 7.068 3.885 0 7.042-3.182 7.042-7.068v-1.589c0.708 1.474 1.578 2.974 2.635 4.297l-2.234 10.495h3.729l1.62-7.615c1.417 0.906 3.047 1.479 4.917 1.479 4 0 7.25-3.271 7.25-7.266 0-4-3.25-7.25-7.25-7.25z" />
-                </svg>
-            ),
-            previewContent: (
-                <div className="flex flex-col h-full justify-between">
-                    <div className="flex items-center justify-between">
-                        <span className="text-[#2ecc71] font-black text-xs">upwork</span>
-                        <span className="text-[8px] bg-[#2ecc71]/10 text-[#2ecc71] px-1 py-0.5 rounded font-bold">Top Rated</span>
-                    </div>
-                    <div className="my-1.5">
-                        <p className="font-bold text-slate-800 dark:text-slate-100 text-[10px] leading-tight">React & Next.js Engineer</p>
-                        <p className="text-[8px] text-slate-500 dark:text-slate-400 mt-0.5 leading-none">100% Job Success Score</p>
-                    </div>
-                    <button className="w-full bg-[#2ecc71] hover:bg-[#27ae60] text-white text-[8px] font-bold py-1.5 rounded-full transition-colors mt-auto">
-                        Hire Amir
-                    </button>
-                </div>
-            )
-        },
-        {
-            name: "Fiverr",
-            url: "https://www.fiverr.com/amirshahzad993/be-your-front-end-developer-and-designer?context_referrer=tailored_homepage_perseus&source=recently_viewed_gigs&ref_ctx_id=ac27644f4a6f42169957037c65a711cb&context=recommendation&pckg_id=1&pos=3&context_alg=recently_viewed&seller_online=true&imp_id=c921610a-8f40-411e-a149-d1c73bf79222",
-            gradient: "from-[#16a085] to-[#1abc9c]",
-            shadow: "hover:shadow-[#1abc9c]/40",
-            textColor: "text-white",
-            rotation: "rotate-6 lg:rotate-[14deg]",
-            hoverRotation: "hover:rotate-2 lg:hover:rotate-[4deg]",
-            offsetClass: "translate-x-[60px] translate-y-3 sm:translate-x-[200px] lg:translate-x-[280px] lg:translate-y-6",
-            hoverOffsetClass: "hover:-translate-y-16 hover:translate-x-[60px] sm:hover:translate-x-[200px] lg:hover:translate-x-[280px]",
-            zIndex: "z-20",
-            previewUrl: "www.fiverr.com/amirshahzad993",
-            icon: (
-                <svg
-                    viewBox="0 0 192 192"
-                    className="w-10 h-10 lg:w-16 lg:h-16 stroke-white fill-none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M121.1 170h34.75V67.04H90.21v-7.72s0-9.01 9.01-9.01h21.88V22H99.22s-43.76 0-43.76 37.32v7.72h-19.3v28.31h19.3v74.64h34.75V95.36h30.89V170Z"
-                        strokeLinejoin="round"
-                        strokeWidth="12"
-                    />
-                </svg>
-            ),
-            previewContent: (
-                <div className="flex flex-col h-full justify-between">
-                    <div className="flex items-center justify-between">
-                        <span className="text-[#16a085] font-bold text-xs">fiverr.</span>
-                        <span className="text-[8px] bg-[#16a085]/10 text-[#16a085] px-1 py-0.5 rounded font-bold">PRO</span>
-                    </div>
-                    <div className="my-1.5">
-                        <p className="font-bold text-slate-800 dark:text-slate-100 text-[10px] leading-tight">Front End Developer & Designer</p>
-                        <p className="text-[8px] text-slate-400 mt-0.5 leading-tight">Clean code & optimized layouts.</p>
-                    </div>
-                    <div className="flex items-center justify-between border-t border-slate-100 dark:border-slate-800/80 pt-1.5 mt-auto">
-                        <div className="flex items-center gap-0.5 text-[8px]">
-                            <span className="text-yellow-500">★</span>
-                            <span className="font-bold text-slate-800 dark:text-slate-200">5.0</span>
-                            <span className="text-slate-400">(120+)</span>
-                        </div>
-                        <span className="text-slate-500 text-[8px]">Starting at $50</span>
-                    </div>
-                </div>
-            )
-        },
-        {
             name: "GitHub",
             url: "https://github.com/Amir00786",
             gradient: "from-[#2c3e50] to-[#1a252f]",
             shadow: "hover:shadow-[#34495e]/40",
             textColor: "text-white",
-            rotation: "rotate-12 lg:rotate-[22deg]",
-            hoverRotation: "hover:rotate-3 lg:hover:rotate-[6deg]",
-            offsetClass: "translate-x-[90px] translate-y-6 sm:translate-x-[300px] lg:translate-x-[420px] lg:translate-y-12",
-            hoverOffsetClass: "hover:-translate-y-16 hover:translate-x-[90px] sm:hover:translate-x-[300px] lg:hover:translate-x-[420px]",
-            zIndex: "z-10",
+            rotation: "-rotate-3 lg:-rotate-[6deg]",
+            hoverRotation: "hover:-rotate-1 lg:hover:-rotate-[2deg]",
+            offsetClass: "-translate-x-[30px] translate-y-1 sm:-translate-x-[100px] lg:-translate-x-[140px] lg:translate-y-2",
+            hoverOffsetClass: "hover:-translate-y-16 hover:-translate-x-[30px] sm:hover:-translate-x-[100px] lg:hover:-translate-x-[140px]",
+            zIndex: "z-30",
             previewUrl: "github.com/Amir00786",
             icon: (
                 <svg
@@ -235,6 +116,115 @@ export const FindMeOn = () => {
                     </div>
                 </div>
             )
+        },
+        {
+            name: "WhatsApp",
+            url: "https://wa.me/923076358337",
+            gradient: "from-[#128c7e] to-[#25d366]",
+            shadow: "hover:shadow-[#25d366]/40",
+            textColor: "text-white",
+            rotation: "rotate-3 lg:rotate-[6deg]",
+            hoverRotation: "hover:rotate-1 lg:hover:rotate-[2deg]",
+            offsetClass: "translate-x-[30px] translate-y-1 sm:translate-x-[100px] lg:translate-x-[140px] lg:translate-y-2",
+            hoverOffsetClass: "hover:-translate-y-16 hover:translate-x-[30px] sm:hover:translate-x-[100px] lg:hover:translate-x-[140px]",
+            zIndex: "z-30",
+            previewUrl: "wa.me/923076358337",
+            icon: (
+                <svg
+                    viewBox="0 0 24 24"
+                    className="w-10 h-10 lg:w-16 lg:h-16 fill-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.454 5.709 1.455h.008c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                </svg>
+            ),
+            previewContent: (
+                <div className="flex flex-col h-full justify-between">
+                    <div className="flex items-center justify-between">
+                        <span className="text-[#25d366] font-black text-sm">whatsapp</span>
+                        <span className="w-2 h-2 rounded-full bg-[#25d366] animate-pulse"></span>
+                    </div>
+                    <div className="my-1.5">
+                        <p className="font-bold text-slate-800 dark:text-slate-100 text-[10px] leading-tight">Direct Message</p>
+                        <p className="text-[8px] text-slate-400 mt-0.5 leading-tight">Available for project inquiries.</p>
+                    </div>
+                    <button className="w-full bg-[#25d366] hover:bg-[#128c7e] text-white text-[8px] font-bold py-1.5 rounded-full transition-colors mt-auto">
+                        Chat Now
+                    </button>
+                </div>
+            )
+        },
+        {
+            name: "Instagram",
+            url: "https://www.instagram.com/",
+            gradient: "from-[#8e44ad] to-[#9b59b6]",
+            shadow: "hover:shadow-[#9b59b6]/40",
+            textColor: "text-white",
+            rotation: "rotate-6 lg:rotate-[14deg]",
+            hoverRotation: "hover:rotate-2 lg:hover:rotate-[4deg]",
+            offsetClass: "translate-x-[60px] translate-y-3 sm:translate-x-[200px] lg:translate-x-[280px] lg:translate-y-6",
+            hoverOffsetClass: "hover:-translate-y-16 hover:translate-x-[60px] sm:hover:translate-x-[200px] lg:hover:translate-x-[280px]",
+            zIndex: "z-20",
+            previewUrl: "instagram.com/amir_shahzad",
+            icon: (
+                <svg
+                    viewBox="0 0 24 24"
+                    className="w-10 h-10 lg:w-16 lg:h-16 fill-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+            ),
+            previewContent: (
+                <div className="flex flex-col h-full justify-between">
+                    <div className="flex items-center justify-between">
+                        <span className="font-bold text-xs bg-gradient-to-r from-[#8e44ad] to-[#9b59b6] bg-clip-text text-transparent">instagram</span>
+                    </div>
+                    <div className="my-1.5">
+                        <p className="font-bold text-slate-800 dark:text-slate-100 text-[10px] leading-tight">@amir_shahzad</p>
+                        <p className="text-[8px] text-slate-400 mt-0.5 leading-tight">Creative UI designs & highlights.</p>
+                    </div>
+                    <button className="w-full bg-gradient-to-r from-[#8e44ad] to-[#9b59b6] text-white text-[8px] font-bold py-1.5 rounded-full transition-colors mt-auto">
+                        Follow
+                    </button>
+                </div>
+            )
+        },
+        {
+            name: "Facebook",
+            url: "https://www.facebook.com/",
+            gradient: "from-[#2c3e50] to-[#34495e]",
+            shadow: "hover:shadow-[#34495e]/40",
+            textColor: "text-white",
+            rotation: "rotate-12 lg:rotate-[22deg]",
+            hoverRotation: "hover:rotate-3 lg:hover:rotate-[6deg]",
+            offsetClass: "translate-x-[90px] translate-y-6 sm:translate-x-[300px] lg:translate-x-[420px] lg:translate-y-12",
+            hoverOffsetClass: "hover:-translate-y-16 hover:translate-x-[90px] sm:hover:translate-x-[300px] lg:hover:translate-x-[420px]",
+            zIndex: "z-10",
+            previewUrl: "facebook.com/amirshahzad",
+            icon: (
+                <svg
+                    viewBox="0 0 24 24"
+                    className="w-10 h-10 lg:w-16 lg:h-16 fill-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+            ),
+            previewContent: (
+                <div className="flex flex-col h-full justify-between">
+                    <div className="flex items-center gap-1.5">
+                        <span className="text-[#34495e] font-black text-sm">facebook</span>
+                    </div>
+                    <div className="my-1.5">
+                        <p className="font-bold text-slate-800 dark:text-slate-100 text-[10px] leading-tight">Amir Shahzad</p>
+                        <p className="text-[8px] text-slate-400 mt-0.5 leading-tight">Connect on social media.</p>
+                    </div>
+                    <button className="w-full bg-[#34495e] hover:bg-[#2c3e50] text-white text-[8px] font-bold py-1.5 rounded-full transition-colors mt-auto">
+                        Follow
+                    </button>
+                </div>
+            )
         }
     ];
 
@@ -243,9 +233,9 @@ export const FindMeOn = () => {
             {/* Ambient Background Glows matching the image */}
             <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-[#9b59b6]/10 blur-[130px] rounded-full -z-10 animate-pulse"></div>
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#3498db]/15 blur-[150px] rounded-full -z-10"></div>
-            <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-[#2ecc71]/10 blur-[130px] rounded-full -z-10 animate-pulse"></div>
+            <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-[#25d366]/10 blur-[130px] rounded-full -z-10 animate-pulse"></div>
             <div className="absolute bottom-1/4 left-10 w-[300px] h-[300px] bg-[#34495e]/20 blur-[120px] rounded-full -z-10"></div>
-            <div className="absolute bottom-1/4 right-10 w-[350px] h-[350px] bg-[#1abc9c]/15 blur-[130px] rounded-full -z-10"></div>
+            <div className="absolute bottom-1/4 right-10 w-[350px] h-[350px] bg-[#EA4335]/15 blur-[130px] rounded-full -z-10"></div>
 
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10 flex flex-col items-center">
 
@@ -254,7 +244,7 @@ export const FindMeOn = () => {
                     <h2 className="text-4xl sm:text-6xl lg:text-8xl font-black uppercase italic tracking-tighter text-slate-800 dark:text-orange-50/90 drop-shadow-sm select-none">
                         FIND ME ON
                     </h2>
-                    <div className="w-20 h-1 bg-gradient-to-r from-[#9b59b6] via-[#3498db] to-[#1abc9c] mx-auto mt-4 rounded-full"></div>
+                    <div className="w-20 h-1 bg-gradient-to-r from-[#9b59b6] via-[#3498db] to-[#25d366] mx-auto mt-4 rounded-full"></div>
                 </div>
 
                 {/* Fan Deck Container */}

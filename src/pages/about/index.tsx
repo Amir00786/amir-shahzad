@@ -232,7 +232,7 @@ export const About = () => {
                             </div>
                         </div>
                         <div className="absolute -top-8 -right-3 md:-right-8 bg-indigo-600 text-white w-20 h-20 md:w-28 md:h-28 flex flex-col items-center justify-center rounded-2xl shadow-2xl shadow-indigo-600/40 transform rotate-12 group-hover:rotate-0 transition-all duration-500">
-                            <span className="text-2xl md:text-4xl font-black">4+</span>
+                            <span className="text-2xl md:text-4xl font-black">2+</span>
                             <span className="text-[10px] uppercase font-black tracking-tighter">Years Exp.</span>
                         </div>
                     </div>
@@ -245,7 +245,7 @@ export const About = () => {
 
                             {/* Bio paragraphs */}
                             <p className="text-gray-400 text-sm lg:text-base leading-relaxed">
-                                I'm a <span className="text-foreground font-semibold">Senior Frontend Engineer</span> with 4+ years of professional experience designing and shipping production-grade web applications. My core expertise spans <span className="text-foreground border-b border-indigo-500/50">React.js, Next.js, and TypeScript</span> — enabling me to architect feature-rich, highly maintainable codebases that scale with product growth.
+                                I'm a <span className="text-foreground font-semibold">Senior Frontend Engineer</span> with 2+ years of professional experience designing and shipping production-grade web applications. My core expertise spans <span className="text-foreground border-b border-indigo-500/50">React.js, Next.js, and TypeScript</span> — enabling me to architect feature-rich, highly maintainable codebases that scale with product growth.
                             </p>
                             <p className="text-gray-400 text-sm lg:text-base leading-relaxed">
                                 I collaborate closely with product, design, and backend teams to translate complex requirements into intuitive, pixel-perfect interfaces. From <span className="text-foreground font-semibold">advanced state management</span> and API integration to <span className="text-foreground font-semibold">accessibility compliance</span> and Core Web Vitals optimization — I deliver end-to-end frontend solutions built for performance and longevity.

@@ -230,7 +230,7 @@ export const FindMeOn = () => {
 
     return (
         <section className="py-24 sm:py-32 bg-zinc-100/50 dark:bg-zinc-900/40 backdrop-blur-md relative overflow-hidden flex flex-col items-center justify-center border-t border-b border-slate-200/30 dark:border-zinc-800/40" id="findme-on">
-            {/* Ambient Background Glows matching the image */}
+            {/* Ambient Background Glows */}
             <div className="absolute top-0 left-1/4 w-[400px] h-[400px] bg-[#9b59b6]/10 blur-[130px] rounded-full -z-10 animate-pulse"></div>
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-[#3498db]/15 blur-[150px] rounded-full -z-10"></div>
             <div className="absolute top-0 right-1/4 w-[400px] h-[400px] bg-[#25d366]/10 blur-[130px] rounded-full -z-10 animate-pulse"></div>
@@ -240,38 +240,79 @@ export const FindMeOn = () => {
             <div className="max-w-[1440px] mx-auto px-6 w-full relative z-10 flex flex-col items-center">
 
                 {/* Section Title */}
-                <div className="text-center mb-20 sm:mb-28" data-aos="fade-up">
+                <div className="text-center mb-14 sm:mb-20 lg:mb-28" data-aos="fade-up">
                     <h2 className="text-4xl sm:text-6xl lg:text-8xl font-black uppercase italic tracking-tighter text-slate-800 dark:text-orange-50/90 drop-shadow-sm select-none">
                         FIND ME ON
                     </h2>
                     <div className="w-20 h-1 bg-gradient-to-r from-[#9b59b6] via-[#3498db] to-[#25d366] mx-auto mt-4 rounded-full"></div>
                 </div>
 
-                {/* Fan Deck Container */}
-                <div className="relative w-full max-w-[1200px] h-[380px] sm:h-[500px] lg:h-[600px] flex items-center justify-center mt-6 select-none" data-aos="zoom-in">
+                {/* ====== MOBILE GRID LAYOUT (hidden on lg+) ====== */}
+                <div className="lg:hidden w-full max-w-sm mx-auto flex flex-col gap-4" data-aos="fade-up">
+                    {/* Profile Picture */}
+                    <div className="flex justify-center mb-2">
+                        <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
+                            <img
+                                src={profile}
+                                alt="Amir Shahzad"
+                                className="w-full h-full object-cover object-top grayscale"
+                            />
+                        </div>
+                    </div>
+                    <p className="text-center text-slate-500 dark:text-slate-400 text-xs font-semibold uppercase tracking-widest mb-2">Connect with me</p>
+
+                    {/* Social Link Buttons */}
+                    {cards.map((card, index) => (
+                        <a
+                            key={index}
+                            href={card.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={`flex items-center gap-4 w-full px-5 py-4 rounded-2xl bg-gradient-to-r ${card.gradient} shadow-lg active:scale-[0.97] transition-all duration-200 group`}
+                        >
+                            {/* Icon */}
+                            <div className="w-11 h-11 flex items-center justify-center bg-white/15 rounded-xl shrink-0">
+                                <div className="w-6 h-6 [&>svg]:w-full [&>svg]:h-full">
+                                    {card.icon}
+                                </div>
+                            </div>
+                            {/* Name */}
+                            <span className="text-white font-black text-base uppercase tracking-widest italic">
+                                {card.name}
+                            </span>
+                            {/* Arrow */}
+                            <svg className="ml-auto w-4 h-4 fill-white opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all" viewBox="0 0 24 24">
+                                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/>
+                            </svg>
+                        </a>
+                    ))}
+                </div>
+
+                {/* ====== FAN DECK LAYOUT (lg and above only) ====== */}
+                <div className="hidden lg:flex relative w-full max-w-[1200px] h-[600px] items-center justify-center mt-6 select-none" data-aos="zoom-in">
 
                     {/* Social Cards (Left and Right Wings) */}
                     {cards.map((card, index) => (
                         <div
                             key={index}
-                            className={`absolute w-[110px] h-[160px] sm:w-[185px] sm:h-[270px] lg:w-[240px] lg:h-[350px] transition-all duration-500 cubic-bezier(0.25, 1, 0.5, 1) transform origin-bottom hover:scale-110 hover:-translate-y-16 ${card.zIndex} hover:z-[60] ${card.rotation} ${card.hoverRotation} ${card.offsetClass} ${card.hoverOffsetClass} group`}
+                            className={`absolute w-[240px] h-[350px] transition-all duration-500 cubic-bezier(0.25, 1, 0.5, 1) transform origin-bottom hover:scale-110 hover:-translate-y-16 ${card.zIndex} hover:z-[60] ${card.rotation} ${card.hoverRotation} ${card.offsetClass} ${card.hoverOffsetClass} group`}
                         >
                             {/* FLOATING MOCK BROWSER PREVIEW */}
-                            <div className="absolute -top-[115px] -left-4 sm:-top-[155px] sm:-left-8 w-[150px] h-[110px] sm:w-[220px] sm:h-[150px] bg-white dark:bg-[#0f172a] rounded-xl border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden scale-75 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto transition-all duration-300 origin-bottom-right z-50 flex flex-col -rotate-[6deg] group-hover:rotate-0">
+                            <div className="absolute -top-[155px] -left-8 w-[220px] h-[150px] bg-white dark:bg-[#0f172a] rounded-xl border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden scale-75 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto transition-all duration-300 origin-bottom-right z-50 flex flex-col -rotate-[6deg] group-hover:rotate-0">
                                 {/* Browser URL Header */}
-                                <div className="flex items-center justify-between px-2 py-1.5 sm:px-3 sm:py-2 bg-slate-100 dark:bg-slate-900 border-b border-slate-200/60 dark:border-slate-800">
+                                <div className="flex items-center justify-between px-3 py-2 bg-slate-100 dark:bg-slate-900 border-b border-slate-200/60 dark:border-slate-800">
                                     <div className="flex gap-1">
-                                        <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#ff5f56]"></span>
-                                        <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#ffbd2e]"></span>
-                                        <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#27c93f]"></span>
+                                        <span className="w-2 h-2 rounded-full bg-[#ff5f56]"></span>
+                                        <span className="w-2 h-2 rounded-full bg-[#ffbd2e]"></span>
+                                        <span className="w-2 h-2 rounded-full bg-[#27c93f]"></span>
                                     </div>
-                                    <div className="flex-1 max-w-[80px] sm:max-w-[130px] mx-auto bg-slate-200 dark:bg-slate-800 rounded py-0.5 px-2 text-[6px] sm:text-[8px] text-slate-500 dark:text-slate-400 truncate text-center font-mono select-none">
+                                    <div className="flex-1 max-w-[130px] mx-auto bg-slate-200 dark:bg-slate-800 rounded py-0.5 px-2 text-[8px] text-slate-500 dark:text-slate-400 truncate text-center font-mono select-none">
                                         {card.previewUrl}
                                     </div>
-                                    <div className="w-6 sm:w-8"></div>
+                                    <div className="w-8"></div>
                                 </div>
                                 {/* Page Content */}
-                                <div className="flex-1 p-2 sm:p-3 flex flex-col text-slate-700 dark:text-slate-300 select-none">
+                                <div className="flex-1 p-3 flex flex-col text-slate-700 dark:text-slate-300 select-none">
                                     {card.previewContent}
                                 </div>
                             </div>
@@ -281,21 +322,21 @@ export const FindMeOn = () => {
                                 href={card.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className={`w-full h-full rounded-2xl sm:rounded-[32px] p-4 sm:p-7 bg-gradient-to-b ${card.gradient} border border-white/10 flex flex-col justify-between items-center cursor-pointer shadow-lg hover:shadow-2xl transition-shadow`}
+                                className={`w-full h-full rounded-[32px] p-7 bg-gradient-to-b ${card.gradient} border border-white/10 flex flex-col justify-between items-center cursor-pointer shadow-lg hover:shadow-2xl transition-shadow`}
                             >
-                                {/* Inner Border Mirror reflection outline */}
-                                <div className="absolute inset-0.5 sm:inset-1 rounded-[14px] sm:rounded-[26px] border border-white/10 pointer-events-none group-hover:border-white/20 transition-colors"></div>
+                                {/* Inner Border reflection */}
+                                <div className="absolute inset-1 rounded-[26px] border border-white/10 pointer-events-none group-hover:border-white/20 transition-colors"></div>
 
-                                {/* Card Content Top */}
+                                {/* Card Icon */}
                                 <div className="flex-1 flex items-center justify-center">
-                                    <div className="p-3 bg-white/10 rounded-2xl sm:rounded-3xl group-hover:scale-110 transition-transform duration-300">
+                                    <div className="p-3 bg-white/10 rounded-3xl group-hover:scale-110 transition-transform duration-300">
                                         {card.icon}
                                     </div>
                                 </div>
 
-                                {/* Card Name Bottom */}
+                                {/* Card Name */}
                                 <div className="text-center mt-2">
-                                    <span className={`text-xs sm:text-base lg:text-lg font-black uppercase tracking-widest ${card.textColor} opacity-90 group-hover:opacity-100 italic transition-opacity`}>
+                                    <span className={`text-lg font-black uppercase tracking-widest ${card.textColor} opacity-90 group-hover:opacity-100 italic transition-opacity`}>
                                         {card.name}
                                     </span>
                                 </div>
@@ -304,20 +345,15 @@ export const FindMeOn = () => {
                     ))}
 
                     {/* Center Profile Card */}
-                    <div
-                        className="absolute w-[120px] h-[175px] sm:w-[200px] sm:h-[290px] lg:w-[260px] lg:h-[375px] rounded-2xl sm:rounded-[32px] bg-neutral-900 border-2 border-white/20 dark:border-white/10 overflow-hidden shadow-2xl z-30 hover:z-[60] transform translate-x-0 translate-y-0 transition-all duration-500 hover:scale-110 hover:-translate-y-12 hover:shadow-[#3498db]/40 group"
-                    >
-                        {/* Profile Image */}
+                    <div className="absolute w-[260px] h-[375px] rounded-[32px] bg-neutral-900 border-2 border-white/20 dark:border-white/10 overflow-hidden shadow-2xl z-30 hover:z-[60] transform translate-x-0 translate-y-0 transition-all duration-500 hover:scale-110 hover:-translate-y-12 hover:shadow-[#3498db]/40 group">
                         <img
                             src={profile}
                             alt="Amir Shahzad"
                             className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
                         />
-
-                        {/* Glassmorphic Caption Card */}
-                        <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 bg-black/60 backdrop-blur-md border border-white/10 p-2 sm:p-4 rounded-xl sm:rounded-2xl transform translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-center items-center text-center">
-                            <p className="text-[#3498db] font-black text-[10px] sm:text-xs italic tracking-wider uppercase leading-none mb-1">Amir Shahzad</p>
-                            <p className="text-white text-[8px] sm:text-[10px] font-bold uppercase tracking-tight opacity-80">Frontend Developer</p>
+                        <div className="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-md border border-white/10 p-4 rounded-2xl transform translate-y-2 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-center items-center text-center">
+                            <p className="text-[#3498db] font-black text-xs italic tracking-wider uppercase leading-none mb-1">Amir Shahzad</p>
+                            <p className="text-white text-[10px] font-bold uppercase tracking-tight opacity-80">Frontend Developer</p>
                         </div>
                     </div>
 

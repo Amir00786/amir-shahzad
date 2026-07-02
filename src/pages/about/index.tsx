@@ -257,7 +257,7 @@ export const About = () => {
                             {/* Professional Highlights */}
                             <div className="grid grid-cols-3 gap-4 pt-2">
                                 {[
-                                    { value: "4+", label: "Years Experience" },
+                                    { value: "2+", label: "Years Experience" },
                                     { value: "30+", label: "Projects Delivered" },
                                     { value: "100%", label: "Client Satisfaction" },
                                 ].map((stat, i) => (
